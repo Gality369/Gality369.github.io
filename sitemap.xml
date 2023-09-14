@@ -152,14 +152,14 @@
 
   
   <url>
-    <loc>https://gality.cn/categories/os/</loc>
+    <loc>https://gality.cn/categories/daily/</loc>
     <lastmod>2023-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://gality.cn/categories/daily/</loc>
+    <loc>https://gality.cn/categories/os/</loc>
     <lastmod>2023-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
