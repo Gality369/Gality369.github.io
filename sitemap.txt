@@ -18,6 +18,6 @@ https://gality.cn/tags/%E8%B8%A9%E5%9D%91/
 https://gality.cn/tags/GDB/
 https://gality.cn/categories/daily/
 https://gality.cn/categories/os/
-https://gality.cn/categories/misc/
 https://gality.cn/categories/os/0-1/
+https://gality.cn/categories/misc/
 https://gality.cn/categories/misc/trail-and-error/
