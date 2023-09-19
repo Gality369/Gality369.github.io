@@ -22,5 +22,5 @@ https://gality.cn/categories/daily/
 https://gality.cn/categories/os/
 https://gality.cn/categories/os/0-1/
 https://gality.cn/categories/misc/
-https://gality.cn/categories/misc/trail-and-error/
 https://gality.cn/categories/ponder/
+https://gality.cn/categories/misc/trail-and-error/
