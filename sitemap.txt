@@ -1,3 +1,4 @@
+https://gality.cn/ponder/%E9%9D%A2%E8%AF%95%E5%A4%8D%E7%9B%98/
 https://gality.cn/links/index.html
 https://gality.cn/daily/DailyRecord/
 https://gality.cn/misc/trail-and-error/Mac%E4%B8%8B%E4%BD%BF%E7%94%A8GDB/
@@ -10,14 +11,16 @@ https://gality.cn/friends/index.html
 https://gality.cn/about/index.html
 https://gality.cn/
 https://gality.cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/
-https://gality.cn/tags/%E7%B3%BB%E5%88%97%E5%BA%8F%E8%A8%80/
 https://gality.cn/tags/%E7%B3%BB%E5%88%97%E9%95%BF%E7%AF%87/
 https://gality.cn/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%9F%BA%E6%9C%AC%E5%8A%9F/
+https://gality.cn/tags/%E7%B3%BB%E5%88%97%E5%BA%8F%E8%A8%80/
 https://gality.cn/tags/%E6%9D%82%E9%A1%B9/
 https://gality.cn/tags/%E8%B8%A9%E5%9D%91/
 https://gality.cn/tags/GDB/
+https://gality.cn/tags/%E6%80%9D%E8%80%83/
 https://gality.cn/categories/daily/
 https://gality.cn/categories/os/
 https://gality.cn/categories/os/0-1/
 https://gality.cn/categories/misc/
 https://gality.cn/categories/misc/trail-and-error/
+https://gality.cn/categories/ponder/
