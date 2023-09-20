@@ -50,7 +50,7 @@
 &lt;/ul&gt;
 &lt;p&gt;注意：在 mbr/loader 的调试中，由于没有源代码，我们需要用 &lt;code&gt;ni/si&lt;/code&gt;  来执行下一条指令。&lt;/p&gt;
 &lt;p&gt;调试实模式的示意图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://imgcdn.gality.cn/blog/v1d8cs.png&#34; alt=&#34;gdb调试实模式&#34; height=&#34;561&#34; width=&#34;478&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://imgcdn.gality.cn/blog/v1d8cs.png&#34; alt=&#34;gdb调试实模式&#34; height=&#34;661&#34; width=&#34;578&#34; /&gt;&lt;/p&gt;
 &lt;h1 id=&#34;参考&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考&#34;&gt;#&lt;/a&gt; 参考&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90ZXJuZXQuZnIvZ2RiX3JlYWxfbW9kZS5odG1s&#34;&gt;https://ternet.fr/gdb_real_mode.html&lt;/span&gt;&lt;/li&gt;
@@ -60,10 +60,10 @@
 </content>
         <category term="tools" scheme="https://gality.cn/categories/tools/" />
         <category term="GDB" scheme="https://gality.cn/categories/tools/GDB/" />
+        <category term="gdb" scheme="https://gality.cn/tags/gdb/" />
+        <category term="qemu" scheme="https://gality.cn/tags/qemu/" />
         <category term="调试" scheme="https://gality.cn/tags/%E8%B0%83%E8%AF%95/" />
         <category term="os" scheme="https://gality.cn/tags/os/" />
-        <category term="GDB" scheme="https://gality.cn/tags/GDB/" />
-        <category term="qemu" scheme="https://gality.cn/tags/qemu/" />
         <updated>2023-09-20T09:31:28.000Z</updated>
     </entry>
     <entry>
@@ -121,9 +121,9 @@
 </content>
         <category term="杂项" scheme="https://gality.cn/categories/misc/" />
         <category term="踩坑" scheme="https://gality.cn/categories/misc/trail-and-error/" />
-        <category term="GDB" scheme="https://gality.cn/tags/GDB/" />
         <category term="杂项" scheme="https://gality.cn/tags/%E6%9D%82%E9%A1%B9/" />
         <category term="踩坑" scheme="https://gality.cn/tags/%E8%B8%A9%E5%9D%91/" />
+        <category term="GDB" scheme="https://gality.cn/tags/GDB/" />
         <updated>2023-09-13T09:39:27.000Z</updated>
     </entry>
     <entry>
@@ -637,7 +637,7 @@
 &lt;h1 id=&#34;gdb&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#gdb&#34;&gt;#&lt;/a&gt; GDB&lt;/h1&gt;
 &lt;p&gt;现在的 Mac 不默认支持 gdb 了，想要安装 gdb 还需要折腾一番，不过这个折腾绝对是必要的，gdb 可以帮助我们调试操作系统内核甚至是我们马上就会讲到的 bios 代码，在写操作系统的过程中肯定会遇见一些奇奇怪怪的 bug，这种时候我们只有通过调试才能确定问题。&lt;/p&gt;
 &lt;h2 id=&#34;安装-3&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装-3&#34;&gt;#&lt;/a&gt; 安装&lt;/h2&gt;
-&lt;p&gt;安装请参考&lt;a href=&#34;https://gality.cn/misc/trail-and-error/Mac%E4%B8%8B%E4%BD%BF%E7%94%A8GDB/&#34;&gt; Mac 下使用 GDB&lt;/a&gt; 和 GDB+QEMU 调试 mbr/loader&lt;/p&gt;
+&lt;p&gt;安装与使用请参考&lt;a href=&#34;https://gality.cn/misc/trail-and-error/Mac%E4%B8%8B%E4%BD%BF%E7%94%A8GDB/&#34;&gt; Mac 下使用 GDB&lt;/a&gt; 和&lt;a href=&#34;https://gality.cn/tools/GDB-with-QEMU/&#34;&gt; GDB+QEMU 调试 mbr/loader&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;以上就是我们在后面会用到的所有工具了，qemu 主要负责模拟一个硬件环境给我们写的操作系统去运行，而 nasm 则是帮助我们去将我们写的代码转换成机器码去给硬件执行，gdb 则是帮助我们在出现问题的时候快速 debug，通过这三个工具，我们就可以进行操作系统的编写了🎉🎉🎉&lt;/p&gt;
 </content>
@@ -646,6 +646,9 @@
         <category term="操作系统" scheme="https://gality.cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" />
         <category term="系列长篇" scheme="https://gality.cn/tags/%E7%B3%BB%E5%88%97%E9%95%BF%E7%AF%87/" />
         <category term="二进制基本功" scheme="https://gality.cn/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%9F%BA%E6%9C%AC%E5%8A%9F/" />
+        <category term="gdb" scheme="https://gality.cn/tags/gdb/" />
+        <category term="nasm" scheme="https://gality.cn/tags/nasm/" />
+        <category term="qemu" scheme="https://gality.cn/tags/qemu/" />
         <updated>2023-08-21T02:26:23.000Z</updated>
     </entry>
     <entry>
