@@ -10,11 +10,111 @@
         </author>
         <description>安全杂记 &amp; 日常随感</description>
         <language>zh-CN</language>
-        <pubDate>Thu, 21 Sep 2023 20:32:21 +0800</pubDate>
-        <lastBuildDate>Thu, 21 Sep 2023 20:32:21 +0800</lastBuildDate>
+        <pubDate>Fri, 29 Sep 2023 16:17:34 +0800</pubDate>
+        <lastBuildDate>Fri, 29 Sep 2023 16:17:34 +0800</lastBuildDate>
         <category term="网络安全" />
         <category term=" 二进制安全" />
         <category term=" 浏览器安全" />
+        <item>
+            <guid isPermalink="true">https://gality.cn/misc/timing/</guid>
+            <title>授时过程详述</title>
+            <link>https://gality.cn/misc/timing/</link>
+            <category term="杂项" scheme="https://gality.cn/categories/misc/" />
+            <category term="杂项" scheme="https://gality.cn/tags/%E6%9D%82%E9%A1%B9/" />
+            <category term="授时" scheme="https://gality.cn/tags/%E6%8E%88%E6%97%B6/" />
+            <pubDate>Fri, 29 Sep 2023 16:17:34 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;时间的产生&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#时间的产生&#34;&gt;#&lt;/a&gt; 时间的产生&lt;/h1&gt;
+&lt;h2 id=&#34;时间的历史&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#时间的历史&#34;&gt;#&lt;/a&gt; 时间的历史&lt;/h2&gt;
+&lt;p&gt;时间其实有两个内涵：一个是时刻，一个是时间间隔。比如我们通知会议 “明天上午 8 点开会，会期半天”，会议开始时间就是时刻，会期就是时间间隔。&lt;/p&gt;
+&lt;h3 id=&#34;世界时ut&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#世界时ut&#34;&gt;#&lt;/a&gt; 世界时（UT）&lt;/h3&gt;
+&lt;p&gt;** 原理：** 地球每天都在自转，相对稳定的自转特性使地球成为一个天然的时钟。天空的恒星好比钟面上的刻度，天文学家使用的望远镜或者其他观星仪器好比钟面上的指针，当望远镜对准某颗恒星时，我们就知道了它指示的准确时刻（看上去 “指针” 不动，“钟面” 在转动），这种方法测定的时间叫做 “世界时”。&lt;/p&gt;
+&lt;p&gt;** 定义：** 世界时的一天就是太阳两次过头顶的时间间隔，而一秒则是一天的 1/86400。（24 小时乘以 60 分乘以 60 秒）&lt;/p&gt;
+&lt;p&gt;** 问题：** 地球自转速率受月球等天体摄动的影响（存在着潮汐现象），以及天文观测的技术能力限制，世界时的测量只能达到毫秒量级，远不能满足人类发展航天技术、精密测地等需求&lt;/p&gt;
+&lt;h3 id=&#34;原子时ta&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#原子时ta&#34;&gt;#&lt;/a&gt; 原子时（TA）&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;原理&lt;/strong&gt;：随着量子力学的发展，实验发现一些分子和原子内部的量子跃迁能够产生周期非常稳定的信号，非常适合时间测量，于是人们就开始研制原子钟，原子钟也成了人类最早应用量子力学研制的测量仪器；&lt;/p&gt;
+&lt;p&gt;** 定义：** 使用原子能级跃迁时释放的精确微波讯号来计时。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;分类：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;守时型原子钟：守时型原子钟环境适应性强，能够常年连续可靠运行，用于连续产生和记录时间信号。&lt;/li&gt;
+&lt;li&gt;基准型原子钟：基准型原子钟则更为精准，通过调整和控制外界电磁场振荡频率，使原子能级跃迁概率始终保持最大，使得外加电磁场振荡频率和原子辐射或吸收电磁波频率一样，从而获得更加精准的时间频率。&lt;br /&gt;
+&lt;strong&gt;铯原子喷泉钟&lt;/strong&gt;是目前世界上最好的基准型原子钟。&lt;/li&gt;
+&lt;li&gt;用于北斗卫星导航的星载钟、仪器中使用的芯片大小的微型原子钟、光钟等等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;** 问题：** 原子钟提供原子时，十分稳定，用于测量时间间隔，但是它没有确切的时刻含义。&lt;/p&gt;
+&lt;h3 id=&#34;协调世界时utc&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#协调世界时utc&#34;&gt;#&lt;/a&gt; 协调世界时（UTC）&lt;/h3&gt;
+&lt;p&gt;世界时秒长不够稳定，但是它的时刻对应着太阳在天空中的特定位置，反映着地球在空间自转角度的变化，与地极坐标等一起构成地球定向参数，与人们日常生活密切相关。我们熟知的大地测量、天文观测、飞行器跟踪定位，以及战略武器试验等都需要世界时。&lt;/p&gt;
+&lt;p&gt;世界时具有重要应用价值，而一些精密物理测量研究则需要稳定的原子时。在应用需求上，这形成了一对矛盾。&lt;/p&gt;
+&lt;p&gt;1958 年 1 月 1 日 0 时，科学家把 “原子时” 和 “世界时” 对准，同时开始运行。但随着时间的推移，受潮汐作用等的影响，两者差异越来越大，地球自转速率长期变慢。为了解决这一问题，人们引入另外一种非常重要的时间尺度，叫 “协调世界时”，它利用原子时的均匀性，采用原子时的 “秒长”，而在 “时刻” 上尽量靠近世界时。当它与世界时的偏差接近 0.9 秒时，全世界在同一时间，统一对协调世界时进行加 1 秒或减 1 秒的调整，这就是我们所说的 “闰秒”。&lt;/p&gt;
+&lt;p&gt;1972 年，协调世界时正式成为国际标准时间。&lt;/p&gt;
+&lt;p&gt;PS：1972 年之前，格林威治时间（GMT）一直是世界时间的标准，在不需要精确到秒的情况下，二者可以视为等同。每年格林尼治天文台会发调时信息，基于 UTC。&lt;/p&gt;
+&lt;h2 id=&#34;全球校准&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#全球校准&#34;&gt;#&lt;/a&gt; 全球校准&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;全球不同国家和地区的 90 个守时实验室，有 500 多台守时型原子钟，每天通过卫星进行时间比对。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;国际权度局&lt;/strong&gt;根据每个原子钟的性能，利用专门的算法计算得到一个稳定的自由原子时&lt;/li&gt;
+&lt;li&gt;通过运行在部分守时实验室的十几台基准型原子钟，其中主要是铯原子喷泉钟，对这个自由原子时进行校准，形成既稳定又准确的国际原子时（TAI）数据。&lt;/li&gt;
+&lt;li&gt;根据国际地球自转服务组织提供的世界时测量数据，对国际原子时进行闰秒调整，形成了国际标准时间，即协调世界时。&lt;/li&gt;
+&lt;li&gt;正常情况下，国际权度局一个月给出一个结果，用于各国的标准时间与国际进行比对，各国会使用该时间对自身时间进行校准。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;北京时间&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#北京时间&#34;&gt;#&lt;/a&gt; 北京时间&lt;/h2&gt;
+&lt;div class=&#34;note primary no-icon&#34;&gt;
+&lt;p&gt;&lt;strong&gt;即然已经有了国际标准时间，我们为什么还要产生我们自己的北京时间？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;因为国际标准时间不是一个实际的物理信号，是滞后一个月发布的一个纸面数据。而我们需要的是真正能实时应用的实际物理信号。所以北京时间应该是国际标准时间在中国的一个具体实现，是中国版的协调世界时。&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;定义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定义&#34;&gt;#&lt;/a&gt; 定义&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;全世界的时间采用&lt;strong&gt;区时制&lt;/strong&gt;，我们按照地理经度把全球划分为&lt;strong&gt; 24 个时区&lt;/strong&gt;，每个时区以其&lt;strong&gt;中央经线&lt;/strong&gt;所在的地方时作为该时区的标准时间。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;1949 年 9 月，在中国人民政治协商会议第一届全体会议上，确定了新中国的标准时间是首都北京所在的&lt;strong&gt;东八区区时&lt;/strong&gt;，即东经 120 度经线所在的地方。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;北京市当地时间，与北京时间有一定的差异，因为北京的地理经度为东经 116°21′，并不是东经 120 度；西安的地方时比 “北京时间” 晚了大约 44 分钟。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;生成&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#生成&#34;&gt;#&lt;/a&gt; 生成&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;” 北京时间 “在西安临潼的国家授时中心产生，使用了 40 多台不同性能的守时型原子钟，综合产生连续稳定的原子时，利用铯原子喷泉基准钟对其进行校准。按照国际统一部署对其进行闰秒，与世界时进行协调，形成我国的标准时间。&lt;/li&gt;
+&lt;li&gt;我们的原子钟每天参与国际比对，正常情况下，我们应用滞后 1 个月的反馈数据进行校准，这样实现了北京时间与国际标准时间的一致性，专业上称 “时间溯源”。其实，各国标准时间都是这样产生的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;参考&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考&#34;&gt;#&lt;/a&gt; 参考&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY2FzLmNuL2t4L2twd3ovMjAyMjAzL3QyMDIyMDMyMV80ODI4ODYwLnNodG1s&#34;&gt;https://www.cas.cn/kx/kpwz/202203/t20220321_4828860.shtml&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aC53aWtpcGVkaWEub3JnL3poLWhhbnMvJUU1JThFJTlGJUU1JUFEJTkwJUU5JTkwJTk4&#34;&gt;https://zh.wikipedia.org/zh-hans/ 原子鐘&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ueHBpeWFvLm54bmV3cy5uZXQvcW1weS8yMDIzMDMvdDIwMjMwMzI3Xzc4OTk4MjEuaHRtbA==&#34;&gt;https://nxpiyao.nxnews.net/qmpy/202303/t20230327_7899821.html&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://gality.cn/note/nndl/nndl-1/</guid>
+            <title>《神经网络与深度学习》笔记（1）</title>
+            <link>https://gality.cn/note/nndl/nndl-1/</link>
+            <category term="学习笔记" scheme="https://gality.cn/categories/note/" />
+            <category term="神经网络与深度学习" scheme="https://gality.cn/categories/note/nndl/" />
+            <category term="系列长篇" scheme="https://gality.cn/tags/%E7%B3%BB%E5%88%97%E9%95%BF%E7%AF%87/" />
+            <category term="机器学习" scheme="https://gality.cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" />
+            <category term="神经网络" scheme="https://gality.cn/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" />
+            <category term="深度学习" scheme="https://gality.cn/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" />
+            <category term="学习笔记" scheme="https://gality.cn/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
+            <pubDate>Thu, 28 Sep 2023 08:26:21 +0800</pubDate>
+            <description><![CDATA[ &lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;本系列文章是博主跟着&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ubmRsLmdpdGh1Yi5pby9ubmRsLWJvb2sucGRm&#34;&gt; github 项目&lt;/span&gt;：《神经网络与深度学习》学习的笔记，目标是理解机器学习的原理，了解不同的机器学习模型并最终可以运用到科研生活中。&lt;/p&gt;
+&lt;p&gt;本文内容主要是机器学习的绪论部分，包括：人工智能历史、流派，机器学习介绍，表示学习，深度学习，神经网络，常用框架，推荐阅读。&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;绪论&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#绪论&#34;&gt;#&lt;/a&gt; 绪论&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一个人在不接触对方的情况下，通过一种特殊的方式，和对方进行一系列的问答。如果在相当长时间内，他无法根据这些问题判断对方是人还是计算机，那么就可以认为这个计算机是智能的。&lt;/p&gt;
+&lt;p&gt;—— 阿兰・图灵（Alan Turing）《Computing Machinery and Intelligence 》&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;人工智能、机器学习、深度学习、神经网络概念辨析：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;人工智能：为机器赋予人的智能，是最广泛的概念&lt;/li&gt;
+&lt;li&gt;机器学习：一种实现人工智能的方法，通过使用算法来解析数据、从中学习，然后对真实世界中的事件做出决策和预测。&lt;/li&gt;
+&lt;li&gt;深度学习：一种机器学习方法，利用深度的神经网络，将模型处理得更为复杂，从而使模型对数据的理解更加深入。&lt;/li&gt;
+&lt;li&gt;神经网络：一种机器学习算法，深度学习可以采用神经网络模型，也可以采用其他模型（例如深度新年网络）；神经网络是深度学习中主要采用的模型。&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://gality.cn/os/04-32bit-print/</guid>
             <title>04-在保护模式下打印</title>
@@ -106,11 +206,12 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://gality.cn/tools/GDB-with-QEMU/</guid>
+            <guid isPermalink="true">https://gality.cn/misc/tool-usage/GDB-with-QEMU/</guid>
             <title>GDB+QEMU调试mbr/loader</title>
-            <link>https://gality.cn/tools/GDB-with-QEMU/</link>
-            <category term="tools" scheme="https://gality.cn/categories/tools/" />
-            <category term="GDB" scheme="https://gality.cn/categories/tools/GDB/" />
+            <link>https://gality.cn/misc/tool-usage/GDB-with-QEMU/</link>
+            <category term="杂项" scheme="https://gality.cn/categories/misc/" />
+            <category term="工具使用" scheme="https://gality.cn/categories/misc/tool-usage/" />
+            <category term="GDB" scheme="https://gality.cn/categories/misc/tool-usage/GDB/" />
             <category term="gdb" scheme="https://gality.cn/tags/gdb/" />
             <category term="qemu" scheme="https://gality.cn/tags/qemu/" />
             <category term="调试" scheme="https://gality.cn/tags/%E8%B0%83%E8%AF%95/" />
@@ -165,8 +266,8 @@
             <link>https://gality.cn/misc/trail-and-error/Mac%E4%B8%8B%E4%BD%BF%E7%94%A8GDB/</link>
             <category term="杂项" scheme="https://gality.cn/categories/misc/" />
             <category term="踩坑" scheme="https://gality.cn/categories/misc/trail-and-error/" />
-            <category term="gdb" scheme="https://gality.cn/tags/gdb/" />
             <category term="杂项" scheme="https://gality.cn/tags/%E6%9D%82%E9%A1%B9/" />
+            <category term="gdb" scheme="https://gality.cn/tags/gdb/" />
             <category term="踩坑" scheme="https://gality.cn/tags/%E8%B8%A9%E5%9D%91/" />
             <pubDate>Wed, 13 Sep 2023 17:39:27 +0800</pubDate>
             <description><![CDATA[ &lt;div class=&#34;note info no-icon&#34;&gt;
@@ -400,7 +501,7 @@
 &lt;figure class=&#34;highlight nasm&#34;&gt;&lt;figcaption data-lang=&#34;NASM&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;[&lt;/span&gt;org &lt;span class=&#34;token number&#34;&gt;0x7c00&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;; bootloader offset&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    mov &lt;span class=&#34;token register variable&#34;&gt;bp&lt;/span&gt;, &lt;span class=&#34;token number&#34;&gt;0x9000&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;; set the stack&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    mov &lt;span class=&#34;token register variable&#34;&gt;sp&lt;/span&gt;, &lt;span class=&#34;token register variable&#34;&gt;bp&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    mov &lt;span class=&#34;token register variable&#34;&gt;bx&lt;/span&gt;, MSG_REAL_MODE&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    call print &lt;span class=&#34;token comment&#34;&gt;; This will be written after the BIOS messages&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    call switch_to_pm&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    mov &lt;span class=&#34;token register variable&#34;&gt;bx&lt;/span&gt;, MSG_ERROR &lt;span class=&#34;token comment&#34;&gt;; this will actually never be executed&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    call print &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    jmp &lt;span class=&#34;token operator&#34;&gt;$&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;%&lt;/span&gt;include &lt;span class=&#34;token string&#34;&gt;&#34;../02-mbr/boot-print.asm&#34;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;; must be the first included&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;%&lt;/span&gt;include &lt;span class=&#34;token string&#34;&gt;&#34;32bit-gdt.asm&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;%&lt;/span&gt;include &lt;span class=&#34;token string&#34;&gt;&#34;32bit-switch.asm&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;[&lt;/span&gt;bits &lt;span class=&#34;token number&#34;&gt;32&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token label function&#34;&gt;BEGIN_PM:&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;; after the switch we will get here&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;; need patch&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    jmp &lt;span class=&#34;token operator&#34;&gt;$&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;MSG_REAL_MODE db &lt;span class=&#34;token string&#34;&gt;&#34;Started in 16-bit real mode&#34;&lt;/span&gt;, &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;MSG_ERROR db &lt;span class=&#34;token string&#34;&gt;&#34;Loaded 32-bit protected mode ERROR&#34;&lt;/span&gt;, &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;; bootsector&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;times &lt;span class=&#34;token number&#34;&gt;510&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;(&lt;span class=&#34;token operator&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;$&lt;/span&gt;) db &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;dw &lt;span class=&#34;token number&#34;&gt;0xaa55&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;然后编译执行就可以了&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;nasm &lt;span class=&#34;token parameter variable&#34;&gt;-fbin&lt;/span&gt; 32bit-main.asm &lt;span class=&#34;token parameter variable&#34;&gt;-o&lt;/span&gt; loader.bin&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;qemu-system-i386 &lt;span class=&#34;token parameter variable&#34;&gt;-fda&lt;/span&gt; loader.bin&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;实际测试发现 &lt;code&gt;boot-print.asm&lt;/code&gt;  必须第一个 include，否则 &lt;code&gt;nasm&lt;/code&gt;  在编译的时候会把 &lt;code&gt;[bx]&lt;/code&gt;  转换成 &lt;code&gt;[edi]&lt;/code&gt;  不知道是 bug 还是我不知道的什么原因，总之，首先 include 就不会有问题了。&lt;/p&gt;
 &lt;hr /&gt;
-&lt;p&gt;至此，CPU 已经进入了保护模式（32 位），接下来我们需要完成虚拟内存到物理内存的映射，为 kernel 的工作打下基础，由于这部分内容体量相对庞大且至关重要，所以我们放在下一章详细去讲。&lt;/p&gt;
+&lt;p&gt;至此，CPU 已经进入了保护模式（32 位），接下来我们需要完成虚拟内存到物理内存的映射，为 kernel 的工作打下基础，由于这部分内容体量相对庞大且至关重要，所以我们放在下下一章详细去讲（下一章先讲点轻松的～）。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -848,7 +949,21 @@
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;h1 id=&#34;daily-record&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#daily-record&#34;&gt;#&lt;/a&gt; Daily Record&lt;/h1&gt;
+&lt;h2 id=&#34;2023-第40周&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2023-第40周&#34;&gt;#&lt;/a&gt; 2023 - 第 40 周&lt;/h2&gt;
+&lt;h3 id=&#34;929&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#929&#34;&gt;#&lt;/a&gt; 9.29&lt;/h3&gt;
+&lt;p&gt;小学了一会儿，大概弄懂了授时中时间是怎么产生的了，还是很不错的，明天继续！&lt;/p&gt;
+&lt;h3 id=&#34;927-928&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#927-928&#34;&gt;#&lt;/a&gt; 9.27-9.28&lt;/h3&gt;
+&lt;p&gt;课程加党日活动把时间占的很满，没有太多时间可以学习自己东西，抽时间完成了科协第一课的 ppt，还有 1000 字的思想汇报和论文精读，本来想着国庆能摆一摆，真实情况是可能得加班加点的学习&lt;sup&gt;_&lt;/sup&gt;&lt;/p&gt;
+&lt;h3 id=&#34;925-926&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#925-926&#34;&gt;#&lt;/a&gt; 9.25-9.26&lt;/h3&gt;
+&lt;p&gt;上课连着组会，其实没有太多时间干自己的事，主要是继续读论文；在组会分享中发现了一些问题，需要尽快解决：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;怎样读论文？重点注意哪些？在泛读时需要达到什么程度？&lt;/li&gt;
+&lt;li&gt;要注意知识的背景，将整个授时的过程研究明白&lt;/li&gt;
+&lt;li&gt;在读论文时一定要&lt;strong&gt;带着脑子&lt;/strong&gt;读，多提出问题。&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h2 id=&#34;2023-第39周&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2023-第39周&#34;&gt;#&lt;/a&gt; 2023 - 第 39 周&lt;/h2&gt;
+&lt;h3 id=&#34;922&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#922&#34;&gt;#&lt;/a&gt; 9.22&lt;/h3&gt;
+&lt;p&gt;周末接着读了论文，然后提前回家了～小摆一下&lt;/p&gt;
 &lt;h3 id=&#34;921&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#921&#34;&gt;#&lt;/a&gt; 9.21&lt;/h3&gt;
 &lt;p&gt;今天真一天课，本来想利用空闲时间搜一下论文做脑图，结果学校的光纤被挖断了，看不了论文，被迫更新了操作系统的第五章 QAQ。&lt;/p&gt;
 &lt;h3 id=&#34;919-920&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#919-920&#34;&gt;#&lt;/a&gt; 9.19-9.20&lt;/h3&gt;
