@@ -1,5 +1,5 @@
-https://gality.cn/daily/DailyRecord/
 https://gality.cn/note/nndl/nndl-1/
+https://gality.cn/daily/DailyRecord/
 https://gality.cn/misc/timing/
 https://gality.cn/misc/Polar-code-&-channel-polarization/
 https://gality.cn/misc/tool-usage/GDB-with-QEMU/
@@ -38,9 +38,9 @@ https://gality.cn/categories/daily/
 https://gality.cn/categories/misc/
 https://gality.cn/categories/os/
 https://gality.cn/categories/misc/tool-usage/
-https://gality.cn/categories/misc/trail-and-error/
 https://gality.cn/categories/os/0-1/
 https://gality.cn/categories/misc/tool-usage/GDB/
+https://gality.cn/categories/misc/trail-and-error/
 https://gality.cn/categories/ponder/
 https://gality.cn/categories/note/
 https://gality.cn/categories/note/nndl/
