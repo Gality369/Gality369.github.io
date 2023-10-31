@@ -10,11 +10,112 @@
         </author>
         <description>安全杂记 &amp; 日常随感</description>
         <language>zh-CN</language>
-        <pubDate>Thu, 26 Oct 2023 19:12:26 +0800</pubDate>
-        <lastBuildDate>Thu, 26 Oct 2023 19:12:26 +0800</lastBuildDate>
+        <pubDate>Fri, 27 Oct 2023 17:00:02 +0800</pubDate>
+        <lastBuildDate>Fri, 27 Oct 2023 17:00:02 +0800</lastBuildDate>
         <category term="网络安全" />
         <category term=" 二进制安全" />
         <category term=" 浏览器安全" />
+        <item>
+            <guid isPermalink="true">https://gality.cn/note/PNT/IRIG-B/</guid>
+            <title>IRIG-B编码</title>
+            <link>https://gality.cn/note/PNT/IRIG-B/</link>
+            <category term="学习笔记" scheme="https://gality.cn/categories/note/" />
+            <category term="PNT" scheme="https://gality.cn/categories/note/PNT/" />
+            <category term="通信" scheme="https://gality.cn/tags/%E9%80%9A%E4%BF%A1/" />
+            <category term="授时" scheme="https://gality.cn/tags/%E6%8E%88%E6%97%B6/" />
+            <category term="学习笔记" scheme="https://gality.cn/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
+            <category term="协议" scheme="https://gality.cn/tags/%E5%8D%8F%E8%AE%AE/" />
+            <pubDate>Fri, 27 Oct 2023 17:00:02 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;irig-简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#irig-简介&#34;&gt;#&lt;/a&gt; IRIG 简介&lt;/h1&gt;
+&lt;p&gt;IRIG 时间码原本是由美国军方为了靶场间的时间同步于 1960 年提出的，最新版本于 2004 年 9 月更新，名为：“IRIG Serial Time Code Formats”。&lt;/p&gt;
+&lt;p&gt;IRIG 时间码有两大类：一类是并行时间码格式，这类码由于是并行格式，传输距离较近，且是二进制，因此远不如串行格式广泛；另一类是串行时间码，共有六种格式，即 A、B、D、E、G、H。它们的主要差别是时间码的帧速率不同。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Format&lt;/th&gt;
+&lt;th&gt;Pulse Rate（or Bit Rate）&lt;/th&gt;
+&lt;th&gt;Index Count Interval&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;IRIG-A&lt;/td&gt;
+&lt;td&gt;1000 PPS (pulse per second)&lt;/td&gt;
+&lt;td&gt;1 ms&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;IRIG-B&lt;/td&gt;
+&lt;td&gt;100 PPS&lt;/td&gt;
+&lt;td&gt;10 ms&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;IRIG-D&lt;/td&gt;
+&lt;td&gt;1 PPM&lt;/td&gt;
+&lt;td&gt;1 minute&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;IRIG-E&lt;/td&gt;
+&lt;td&gt;10 PPS&lt;/td&gt;
+&lt;td&gt;100 ms&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;IRIG-G&lt;/td&gt;
+&lt;td&gt;10000 PPS&lt;/td&gt;
+&lt;td&gt;0.1 ms&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;IRIG-H&lt;/td&gt;
+&lt;td&gt;1 PPS&lt;/td&gt;
+&lt;td&gt;1 second&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;irig-b&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#irig-b&#34;&gt;#&lt;/a&gt; IRIG-B&lt;/h2&gt;
+&lt;p&gt;IRIG-B 为 IRIG 中的 B 型码，是每秒一帧的时间码，最适合使用的习惯，而且传输也较容易，所以应用最为广泛；每帧可传递 100 位的信息。&lt;/p&gt;
+&lt;p&gt;为了便于传递，可用标准正弦波载频进行幅度调制。标准正弦波载频的频率与码元速率严格相关。B 码的标准正弦波载频频率为 1KHz。同时，其正交过零点与所调制格式码元的前沿相符合，标准的调制比为 10 比 3。调制后的 B 码通常称 IRIG-B（AC）码，未经幅度调制的通常称 IRIG-B（DC）码。&lt;/p&gt;
+&lt;p&gt;IRIG-B (DC) 码的接口通常采用 TTL 接口和 RS422（V.11）接口。IRIG-B (AC) 码的接口采用平衡接口。IRIG-B (DC) 码的同步精度可达几十纳秒量级，IRIG-B (AC) 码的同步精度一般为 10～20us (微秒)。&lt;/p&gt;
+&lt;h1 id=&#34;irig-b-格式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#irig-b-格式&#34;&gt;#&lt;/a&gt; IRIG-B 格式&lt;/h1&gt;
+&lt;p&gt;概念引入：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;帧&lt;/strong&gt;：B 码每秒&lt;span class=&#34;red&#34;&gt; 1 帧&lt;/span&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;脉宽码&lt;/strong&gt;：用脉冲的宽度（脉宽，即持续时间）来表示数字信息。不同的数字或字符由不同宽度的脉冲表示。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;码元&lt;/strong&gt;：时间格式里的每个脉冲称为码元。码元的 “准时”（OnTime）参考点是其脉冲前沿。每个码元的宽度为&lt;span class=&#34;red&#34;&gt; 10 ms&lt;/span&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;码元速率&lt;/strong&gt;：码元的传输速率称为码元速率。B 码的码元速率为&lt;span class=&#34;red&#34;&gt; 100 pps&lt;/span&gt;，代表每秒有 100 个脉冲或码元传输。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;索引计数&lt;/strong&gt;：每个码元对应一个索引计数。两个相邻码元前沿之间的时间间隔为索引计数间隔，B 码的索引计数间隔（其实也就是码元宽度）为&lt;span class=&#34;red&#34;&gt; 10ms&lt;/span&gt;。索引计数在帧参考点处以 “0” 开始，以后每隔一个索引计数间隔增加 1，直至这帧结束。B 码每帧有 100 个码元，所以索引计数数字是 0～99。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;位置识别标志（P 码）&lt;/strong&gt;：位置识别标志的宽度是对应时码的索引计数间隔的 0.8，所以，B 码为&lt;span class=&#34;red&#34;&gt; 8ms&lt;/span&gt;。位置识别标志 P0 的前沿在帧参考点（PR）前一个索引计数间隔处，以后每十个码元有一个位置识别标志，分别为 P1、P2……，P9 位置识别标志的重复速率为码元速率的十分之一即位置标识的码元速率为 10 pps。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;码字&lt;/strong&gt;：所有的时间格式都是脉宽码。二进制 &lt;code&gt;1&lt;/code&gt;  和 &lt;code&gt;0&lt;/code&gt;  的脉宽分别为码宽度的 0.5 和 0.2。所以，B 码的二进制 &lt;code&gt;1&lt;/code&gt;  和 &lt;code&gt;0&lt;/code&gt;  的脉宽分别为&lt;span class=&#34;red&#34;&gt; 5ms&lt;/span&gt; 和&lt;span class=&#34;red&#34;&gt; 2ms&lt;/span&gt;（类似莫斯电码的思想，只不过只有两种类型）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://imgcdn.gality.cn/blog/41kb96.png&#34; alt=&#34;脉宽&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;时间编码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#时间编码&#34;&gt;#&lt;/a&gt; 时间编码&lt;/h1&gt;
+&lt;p&gt;B 码以两个连续的 P 码作为帧的分割标识，第一个 P 码是 P0，第二个 P 码是 PR，注意，从第二个 P 码（PR）作为帧起始标志，即第 0 个码元为 PR。&lt;/p&gt;
+&lt;p&gt;在 B 码时间格式中含有天、时、分、秒，时序为秒 - 分 - 时 - 天，所占信息位为：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;秒：7 位。第 1，2，3，4，6，7，8 码元。&lt;/li&gt;
+&lt;li&gt;分：7 位。第 10，11，12，13，15，16，17 码元。&lt;/li&gt;
+&lt;li&gt;时：6 位。第 20，21，22，23，25，26 码元。&lt;/li&gt;
+&lt;li&gt;天：10 位。第 30，31，32，33，35，36，37，38，40，41 码元。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;位置在 P0～P5 之间，P6～P0 包含其他控制信息。第 5，14，24 为索引标志，宽度为 2ms。时、分、秒均采用 BCD 码表示，低位在前，高位在后；个位在前，十位在后；个位和十位间有一个脉冲宽度为 2ms 的索引标志码元。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;BCD 码将每个十进制数字（0 到 9）表示为 4 位二进制数，每个十进制数的 4 位二进制编码之间通常使用特定的分隔符或标志码元分隔。&lt;/p&gt;
+&lt;p&gt;例如，如果要表示十进制数 25，BCD 码会将其表示为两个 4 位二进制数，分别是 0010（十进制的 2）和 0101（十进制的 5）。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;从 P8 开始是 SBS 时间码，共 17 位二进制信号，每天重复。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;SBS 码&amp;quot; 指的是 &amp;quot;Second, Bits, and Status&amp;quot;（秒、位和状态）编码。SBS 码是 IRIG-B 编码的一部分，用于传输与时间同步和时间标记相关的信息。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://imgcdn.gality.cn/blog/91kavc.png&#34; alt=&#34;IRIG-B结构&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;「图中的 &lt;code&gt;1,2,4,8 &lt;/code&gt; 或 &lt;code&gt;10,20,40&lt;/code&gt;  指的是如果该位置 &lt;code&gt;1&lt;/code&gt; ，时间的大小」&lt;/p&gt;
+&lt;p&gt;给出一张更详细的参考图：&lt;br /&gt;
+&lt;img data-src=&#34;http://imgcdn.gality.cn/blog/5y0rng.jpg&#34; alt=&#34;IRIG-B详细结构&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;参考&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考&#34;&gt;#&lt;/a&gt; 参考&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY3liZXItc2NpZW5jZXMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDE5LzAxL1ROLTEwMl9JUklHLUIucGRm&#34;&gt;https://www.cyber-sciences.com/wp-content/uploads/2019/01/TN-102_IRIG-B.pdf&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2R5eDE5OTMvYXJ0aWNsZS9kZXRhaWxzLzExNDY1NTkyMg==&#34;&gt;https://blog.csdn.net/dyx1993/article/details/114655922&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS9JUklHLUIvMTU5ODYwOA==&#34;&gt;https://baike.baidu.com/item/IRIG-B/1598608&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://gality.cn/ponder/Gresham-law/</guid>
             <title>劣币驱逐良币 ｜ 一次网购经历的反思</title>
@@ -96,9 +197,9 @@
             <category term="学习笔记" scheme="https://gality.cn/categories/note/" />
             <category term="PNT" scheme="https://gality.cn/categories/note/PNT/" />
             <category term="通信" scheme="https://gality.cn/tags/%E9%80%9A%E4%BF%A1/" />
-            <category term="PNT" scheme="https://gality.cn/tags/PNT/" />
             <category term="授时" scheme="https://gality.cn/tags/%E6%8E%88%E6%97%B6/" />
             <category term="学习笔记" scheme="https://gality.cn/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
+            <category term="PNT" scheme="https://gality.cn/tags/PNT/" />
             <pubDate>Wed, 25 Oct 2023 16:19:46 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;光纤通信原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#光纤通信原理&#34;&gt;#&lt;/a&gt; 光纤通信原理&lt;/h1&gt;
 &lt;h2 id=&#34;理论前提&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#理论前提&#34;&gt;#&lt;/a&gt; 理论前提&lt;/h2&gt;
@@ -554,9 +655,9 @@
             <link>https://gality.cn/misc/trail-and-error/conda-mamba/</link>
             <category term="杂项" scheme="https://gality.cn/categories/misc/" />
             <category term="踩坑" scheme="https://gality.cn/categories/misc/trail-and-error/" />
-            <category term="机器学习" scheme="https://gality.cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" />
             <category term="杂项" scheme="https://gality.cn/tags/%E6%9D%82%E9%A1%B9/" />
             <category term="踩坑" scheme="https://gality.cn/tags/%E8%B8%A9%E5%9D%91/" />
+            <category term="机器学习" scheme="https://gality.cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" />
             <category term="conda" scheme="https://gality.cn/tags/conda/" />
             <category term="mamba" scheme="https://gality.cn/tags/mamba/" />
             <pubDate>Mon, 16 Oct 2023 20:26:41 +0800</pubDate>
@@ -836,9 +937,9 @@ M1001 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/
             <link>https://gality.cn/note/PNT/timing/</link>
             <category term="学习笔记" scheme="https://gality.cn/categories/note/" />
             <category term="PNT" scheme="https://gality.cn/categories/note/PNT/" />
-            <category term="PNT" scheme="https://gality.cn/tags/PNT/" />
             <category term="授时" scheme="https://gality.cn/tags/%E6%8E%88%E6%97%B6/" />
             <category term="学习笔记" scheme="https://gality.cn/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
+            <category term="PNT" scheme="https://gality.cn/tags/PNT/" />
             <pubDate>Fri, 29 Sep 2023 16:17:34 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;时间的产生&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#时间的产生&#34;&gt;#&lt;/a&gt; 时间的产生&lt;/h1&gt;
 &lt;h2 id=&#34;时间的历史&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#时间的历史&#34;&gt;#&lt;/a&gt; 时间的历史&lt;/h2&gt;
@@ -1031,9 +1132,9 @@ T_4 = T_3 - \theta + \beta
             <category term="学习笔记" scheme="https://gality.cn/categories/note/" />
             <category term="神经网络与深度学习" scheme="https://gality.cn/categories/note/nndl/" />
             <category term="系列长篇" scheme="https://gality.cn/tags/%E7%B3%BB%E5%88%97%E9%95%BF%E7%AF%87/" />
+            <category term="学习笔记" scheme="https://gality.cn/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
             <category term="机器学习" scheme="https://gality.cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" />
             <category term="深度学习" scheme="https://gality.cn/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" />
-            <category term="学习笔记" scheme="https://gality.cn/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
             <category term="神经网络" scheme="https://gality.cn/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" />
             <pubDate>Thu, 28 Sep 2023 08:26:21 +0800</pubDate>
             <description><![CDATA[ &lt;div class=&#34;note info&#34;&gt;
@@ -1971,9 +2072,9 @@ T_4 = T_3 - \theta + \beta
             <category term="操作系统" scheme="https://gality.cn/categories/os/" />
             <category term="从0到1" scheme="https://gality.cn/categories/os/0-1/" />
             <category term="操作系统" scheme="https://gality.cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" />
+            <category term="系列序言" scheme="https://gality.cn/tags/%E7%B3%BB%E5%88%97%E5%BA%8F%E8%A8%80/" />
             <category term="系列长篇" scheme="https://gality.cn/tags/%E7%B3%BB%E5%88%97%E9%95%BF%E7%AF%87/" />
             <category term="二进制基本功" scheme="https://gality.cn/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%9F%BA%E6%9C%AC%E5%8A%9F/" />
-            <category term="系列序言" scheme="https://gality.cn/tags/%E7%B3%BB%E5%88%97%E5%BA%8F%E8%A8%80/" />
             <pubDate>Mon, 21 Aug 2023 09:45:16 +0800</pubDate>
             <description><![CDATA[ &lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;本章是操作系统从 0 到 1 系列的第一篇文章，主要说明了本系列文章的目标、章节规划、前置知识储备及参考文章；文章编写力求图文丰富、逻辑完备，利用主线把知识串联起来，最终将从 0 到 1 实现一个操作系统所需要的知识都有机结合起来。&lt;/p&gt;
@@ -2061,7 +2162,12 @@ T_4 = T_3 - \theta + \beta
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;h1 id=&#34;daily-record&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#daily-record&#34;&gt;#&lt;/a&gt; Daily Record&lt;/h1&gt;
+&lt;h2 id=&#34;2023-第45周&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2023-第45周&#34;&gt;#&lt;/a&gt; 2023 - 第 45 周&lt;/h2&gt;
+&lt;h3 id=&#34;1030-1031&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1030-1031&#34;&gt;#&lt;/a&gt; 10.30-10.31&lt;/h3&gt;
+&lt;p&gt;上课 &amp;amp; 写作业，学习了 IRIG-B 的含义和结构，IRIG-B 广泛应用于卫星和光纤中，还是非常有用的。&lt;/p&gt;
 &lt;h2 id=&#34;2023-第44周&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2023-第44周&#34;&gt;#&lt;/a&gt; 2023 - 第 44 周&lt;/h2&gt;
+&lt;h3 id=&#34;1027&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1027&#34;&gt;#&lt;/a&gt; 10.27&lt;/h3&gt;
+&lt;p&gt;记住：什么都懂一点并不值得骄傲，只有在某一领域有深入研究、有成果的基础上，才是优点。&lt;/p&gt;
 &lt;h3 id=&#34;1026&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1026&#34;&gt;#&lt;/a&gt; 10.26&lt;/h3&gt;
 &lt;p&gt;彻底搞清楚了光纤通信的基本原理和波分复用技术的原理，明天继续看 IRIG-B 编码！&lt;/p&gt;
 &lt;p&gt;针对昨天提出的 “劣币驱逐良币” 问题，进一步思考了一下，希望能系统的总结成文章～&lt;/p&gt;
@@ -2432,97 +2538,6 @@ T_4 = T_3 - \theta + \beta
 &lt;/blockquote&gt;
 &lt;p&gt;科技协会的愿景是帮助每一个热爱计算机、热爱技术的同学在技术的大海中遨游；SIPC 作为一个学生组织，使命是帮助整个学院乃至学校的同学们提升技术水平。所以，&lt;strong&gt;面试不必过于严苛，培训不用过于保密&lt;/strong&gt;，如若能让每一位热爱技术的同学有所收获，那便是我们最大的成就。&lt;/p&gt;
  ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://gality.cn/misc/trail-and-error/blog%E6%90%AD%E5%BB%BA/</guid>
-            <title>blog搭建&amp;Hello world</title>
-            <link>https://gality.cn/misc/trail-and-error/blog%E6%90%AD%E5%BB%BA/</link>
-            <category term="杂项" scheme="https://gality.cn/categories/misc/" />
-            <category term="踩坑" scheme="https://gality.cn/categories/misc/trail-and-error/" />
-            <category term="杂项" scheme="https://gality.cn/tags/%E6%9D%82%E9%A1%B9/" />
-            <category term="踩坑" scheme="https://gality.cn/tags/%E8%B8%A9%E5%9D%91/" />
-            <pubDate>Mon, 14 Aug 2023 16:02:17 +0800</pubDate>
-            <description><![CDATA[ &lt;div class=&#34;note primary no-icon-with-header&#34;&gt;
-&lt;h1 id=&#34;待踩坑项&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#待踩坑项&#34;&gt;#&lt;/a&gt; &lt;ins class=&#34;danger&#34;&gt;待踩坑项&lt;/ins&gt;&lt;/h1&gt;
-&lt;p&gt;🎉已经全部完成啦，后续将注重内容更新～🎉&lt;/p&gt;
-&lt;ul class=&#34;task-list&#34;&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;
-&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_0&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_0&#34;&gt; valine admin: 通过脚本&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0Rlc2VydHNQL1ZhbGluZS1BZG1pbi5naXQ=&#34;&gt;一键部署&lt;/span&gt;完成，&lt;s class=&#34;info&#34;&gt;模版自身有点小 bug，通过调试 JS 解决&lt;/s&gt; &lt;s class=&#34;danger&#34;&gt;其实不算 bug，本质是配置问题，修改完配置后就没有 bug 了&lt;/s&gt;  确实就是 bug，已经修复了 Orz&lt;/label&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;
-&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_1&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_1&#34;&gt; 文章图片：七牛云 + 学生认证 + 图片压缩 + CDN 加速，目前图片加载速度较为满意&lt;/label&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;
-&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_2&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_2&#34;&gt; 主题样式更改以更符合自己口味：已完成白天 &amp;amp; 黑夜两套色系的适配， 顺便推荐一下飞书，UI 配色真的很好抄 (博客白天模式的配色和本人命令行均是～)&lt;/label&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;
-&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_3&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_3&#34;&gt; 默认图片：通过图传解决，plus：添加更多图片以减少随机的重复&lt;/label&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;
-&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_4&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_4&#34;&gt; 主题特殊样式：&lt;span class=&#34;rainbow&#34;&gt;该页面已通过主题特殊样式复写～&lt;/span&gt;&lt;/label&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;
-&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_5&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_5&#34;&gt; 主页精选分类实现：花费了半天成功实现，中间有些坑值得记录一下，详见：&lt;a href=&#34;https://gality.cn/misc/trail-and-error/blog%E6%90%AD%E5%BB%BA/#%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88%E6%AD%A3%E5%B8%B8%E4%BD%86%E9%83%A8%E7%BD%B2%E5%90%8E404&#34;&gt;这里&lt;/a&gt;&lt;/label&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;
-&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_6&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_6&#34;&gt; Valine 表情源引入：使用了&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0dhbWVyTm9UaXRsZS9WYWxpbmUtTWFnaWM=&#34;&gt; Valine-Magic&lt;/span&gt; 的表情源来实现&lt;/label&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;
-&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_7&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_7&#34;&gt; 主题样式 bug 修复：修复当标题在标签块中时样式重叠的 bug&lt;/label&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;
-&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_8&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_8&#34;&gt; 主题样式功能新增：&lt;s&gt;新增对 front-matter 中 summary 字段的支持&lt;/s&gt;，使用 &lt;code&gt;excerpt&lt;/code&gt;  即可实现摘要编写工功能&lt;/label&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;
-&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_9&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_9&#34;&gt; 主题样式功能修正：不知道是因为改动了哪里，导致文章中的超链接样式没有下滑线，通过对代码进行修正修复了这个问题。&lt;/label&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;
-&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_10&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_10&#34;&gt; algolia: 申请完成并且在今天完成了配置，其中遇见一点点小坑 (配置原因)，很快便解决了&lt;/label&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;2023.9.7 补&lt;/p&gt;
-&lt;ul class=&#34;task-list&#34;&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_11&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_11&#34;&gt; MiniValine Bug 修复：页脚最新评论因多加 &lt;code&gt;/&lt;/code&gt;  导致无法正确跳转到文章评论，通过改变 MiniValine 解决了这个问题。&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_12&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_12&#34;&gt; 本地资源走 jsdeliver 进行 CDN 加速：速度提升巨大，真心感谢&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuanNkZWxpdnIuY29tLw==&#34;&gt; jsdelivr&lt;/span&gt; 这样的免费项目。&lt;/label&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;h1 id=&#34;blog-搭建&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#blog-搭建&#34;&gt;#&lt;/a&gt; Blog 搭建&lt;/h1&gt;
-&lt;p&gt;无法白嫖阿里云 or 腾讯云的学生优惠后，用个人云服务器作为博客的花费属实有点不能承受，于是又回归了 &lt;code&gt;Github Pages + Hexo&lt;/code&gt;  的白嫖之路，途中踩到了诸多坑，这里稍微记录一下：&lt;/p&gt;
-&lt;h2 id=&#34;主题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#主题&#34;&gt;#&lt;/a&gt; 主题&lt;/h2&gt;
-&lt;p&gt;逛&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3RoZW1lcy9pbmRleC5odG1s&#34;&gt; themes&lt;/span&gt; 的时候偶然看见了&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==&#34;&gt; ShoKa&lt;/span&gt; 主题，除了有点太过二次元外特效和布局还是很对我胃口的，唯一一点在于作者两年前就不更新了，看到最后一次更新时间时，我就意识到，安装之旅一定时会踩坑的...，咬咬牙，还是踩一遍吧&lt;/p&gt;
-&lt;h2 id=&#34;node版本&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#node版本&#34;&gt;#&lt;/a&gt; node 版本&lt;/h2&gt;
-&lt;p&gt;作为一个两年前的项目，用最新 LTS 版本 18.17.1 果不其然会出问题，主要在于该项目所依赖的插件 &lt;code&gt;hexo-renderer-multi-markdown-it&lt;/code&gt;  中依赖了 &lt;code&gt;puppeteer&lt;/code&gt; ，在已经解决了网络问题的情况下，仍然会报一个错误：&lt;/p&gt;
-&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;TypeError &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token constant&#34;&gt;ERR_INVALID_PROTOCOL&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; Protocol &lt;span class=&#34;token string&#34;&gt;&#34;https:&#34;&lt;/span&gt; not supported&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt; Expected &lt;span class=&#34;token string&#34;&gt;&#34;http:&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;最终解决方法为将 node 版本降至 12.x：&lt;/p&gt;
-&lt;figure class=&#34;highlight sh&#34;&gt;&lt;figcaption data-lang=&#34;sh&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; n &lt;span class=&#34;token number&#34;&gt;12.22&lt;/span&gt;.12&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;deploy插件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#deploy插件&#34;&gt;#&lt;/a&gt; deploy 插件&lt;/h2&gt;
-&lt;p&gt;hexo 官方的 deploy 插件为： &lt;code&gt;hexo-deployer-git&lt;/code&gt; ，提供了一键部署功能，而官方文档给的不是特别详细，token 变量赋值为 github 的 access token 仍然无法认证成功，这里直接给出认证成功的配置：&lt;/p&gt;
-&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;deploy&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; git&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;repo&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; https&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;//Your_Access_Token@github.com/&amp;lt;Name&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;/&amp;lt;Name&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;.github.io&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;branch&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; main&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;包管理器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#包管理器&#34;&gt;#&lt;/a&gt; 包管理器&lt;/h2&gt;
-&lt;p&gt;不知道是不是因为 node 降级之后没有把 &lt;code&gt;yarn&lt;/code&gt;  降级的原因，当我用 &lt;code&gt;yarn add xxx&lt;/code&gt;  安装依赖后，再次使用 &lt;code&gt;hexo&lt;/code&gt;  指令时，会出现报错 &lt;code&gt;cannot find module &#39;hexo&#39;&lt;/code&gt; ，这里没有继续探究下去了，直接放弃 &lt;code&gt;yarn&lt;/code&gt; ，使用 &lt;code&gt;npm&lt;/code&gt;  就没有问题了。&lt;/p&gt;
-&lt;h2 id=&#34;leancloud-valine&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#leancloud-valine&#34;&gt;#&lt;/a&gt; LeanCloud + Valine&lt;/h2&gt;
-&lt;p&gt;该主题默认支持了使用 &lt;code&gt;valine+LeanCloud&lt;/code&gt;  的方式实现无后端评论功能，有问题的地方在于 leanCloud 现在做了默认策略，无法通过默认地址进行访问，必须通过 &lt;code&gt;应用 -&amp;gt; 设置 -&amp;gt; 应用凭证 -&amp;gt; 域名白名单&lt;/code&gt; 中的 Request 域名进行访问，在 &lt;code&gt;_config.yaml&lt;/code&gt;  中的配置项中，必须在 &lt;code&gt;serverURLs&lt;/code&gt;  为上述域名 &lt;code&gt;xxxx.api.lncldglobal.com&lt;/code&gt;  才可以正常使用&lt;/p&gt;
-&lt;h2 id=&#34;本地预览正常但部署后404&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#本地预览正常但部署后404&#34;&gt;#&lt;/a&gt; 本地预览正常但部署后 404&lt;/h2&gt;
-&lt;p&gt;刚开始遇见这个问题是在实现分类图片时，图片就在 github 的仓库对应位置，但是加载页面时却 404，用英文搜了好久但其实没有搜到点上，这个问题的本质在于，默认 njk 模版在引用图片时使用的是绝对路径 &lt;code&gt;/MISC/cover.jpg&lt;/code&gt; ，本地没有问题，但是部署到 github 后会出现无法访问的情况，此时将模版更改为 &lt;code&gt;MISC/cover.jpg&lt;/code&gt;  即可，对我来说，问题的复杂在于，刚开始没有定位到问题，以为是 url 路径大小写的问题，所以就把 &lt;code&gt;MISC&lt;/code&gt;  改为了 &lt;code&gt;misc&lt;/code&gt; ，这有导致了新的问题，这个才是更值得记录。&lt;/p&gt;
-&lt;p&gt;由于 URL 路径对于大小写是敏感的，所以如果服务器路径为 &lt;code&gt;http://xx.com/misc/cover.jpg&lt;/code&gt; ，那么此时，用 &lt;code&gt;http://xx.com/MISC/cover.jpg&lt;/code&gt;  是访问不到的，所以我在更改大小写后，仍然有 404 的问题，且此时，我注意到在本地的 public 文件夹中， &lt;code&gt;MISC&lt;/code&gt;  文件夹已经变为了 &lt;code&gt;misc&lt;/code&gt; ，但 &lt;code&gt;hexo d&lt;/code&gt;  后，github 仓库中仍然为 &lt;code&gt;MISC&lt;/code&gt; ，原因在于 git 本身是对大小写不敏感的，即 &lt;code&gt;MISC&lt;/code&gt;  和 &lt;code&gt;misc&lt;/code&gt;  对于 git 来说是一样的，而 hexo 本身又是差量更新，所以大小写的变动并没有记录更新，仍然用之前的大写版本，该问题的解决方法如下：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;修改 &lt;code&gt;&amp;lt;root&amp;gt;/.deploy_git/.git/config&lt;/code&gt;  文件，将 &lt;code&gt;gnorecase = true&lt;/code&gt;  改为 &lt;code&gt;false&lt;/code&gt;  (使得 git 对大小写敏感)&lt;/li&gt;
-&lt;li&gt;删除 &lt;code&gt;&amp;lt;root&amp;gt;/.deploy_git&lt;/code&gt;  下的 &lt;code&gt;MISC&lt;/code&gt;  文件夹 (该文件夹内才是真正的 git 仓库)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hexo clean &amp;amp;&amp;amp; hexo g &amp;amp;&amp;amp; hexo d&lt;/code&gt;  重新部署&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;note warning no-icon&#34;&gt;
-&lt;p&gt;PS：图片路径问题的本质其实是主题原本的写法是用了 jsdelivr 去加速静态资源的，当配置了 &lt;code&gt;statics&lt;/code&gt;  为 jsdelivr 地址时，资源加载不会出错，如果是配置为 &lt;code&gt;/&lt;/code&gt; ，则会存在上述问题。&lt;/p&gt;
-&lt;/div&gt;
-&lt;h2 id=&#34;jsdelivr加速及刷新缓存&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#jsdelivr加速及刷新缓存&#34;&gt;#&lt;/a&gt; Jsdelivr 加速及刷新缓存&lt;/h2&gt;
-&lt;p&gt;对于 github 项目来说，配置 Jsdelivr 加速极其简单，直接将资源的访问链接替换成 CDN 链接即可，CDN 链接为：&lt;/p&gt;
-&lt;figure class=&#34;highlight http&#34;&gt;&lt;figcaption data-lang=&#34;HTTP&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token header&#34;&gt;&lt;span class=&#34;token header-name keyword&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token header-value&#34;&gt;//cdn.jsdelivr.net/gh/您的Github用户名/项目仓库名@版本/文件路径&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;例如，我自己改过的 MiniValine 的地址为：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0dhbGl0eTM2OS9NaW5pVmFsaW5l&#34;&gt;https://github.com/Gality369/MiniValine&lt;/span&gt; ，项目内的目录为 &lt;code&gt;dist/MiniValine.min.js&lt;/code&gt;  ，发布了一个 release 版本为 “v4.2.2-beta11”。&lt;/p&gt;
-&lt;p&gt;那么我只需将地址替换为：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL2dhbGl0eTM2OS9NaW5pVmFsaW5lQHY0LjIuMi1iZXRhMTEvZGlzdC9NaW5pVmFsaW5lLm1pbi5qcw==&#34;&gt;https://cdn.jsdelivr.net/gh/gality369/MiniValine@v4.2.2-beta11/dist/MiniValine.min.js&lt;/span&gt; 就可以让 jsdeliver 抓取我的 js 文件并通过 CDN 加速传给我。&lt;/p&gt;
-&lt;p&gt;注意，这其中涉及到缓存问题，例如当我改变了上述 js 文件后，由于 jsdelivr 会存一份缓存文件便于加速获取过程，所以当我请求时可能只能获取老版本的 js，我们可以通过将 &lt;code&gt;cdn&lt;/code&gt;  换成 &lt;code&gt;purge&lt;/code&gt;  的方式来告诉 jsdelivr 重新获取文件并刷新缓存，例如：&lt;/p&gt;
-&lt;figure class=&#34;highlight http&#34;&gt;&lt;figcaption data-lang=&#34;HTTP&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//刷新前&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token header&#34;&gt;&lt;span class=&#34;token header-name keyword&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token header-value&#34;&gt;//cdn.jsdelivr.net/gh/gality369/MiniValine@v4.2.2-beta11/dist/MiniValine.min.js&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//强制刷新，返回 status: finished 代表刷新成功&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token header&#34;&gt;&lt;span class=&#34;token header-name keyword&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token header-value&#34;&gt;//purge.jsdelivr.net/gh/gality369/MiniValine@v4.2.2-beta11/dist/MiniValine.min.js&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//重新访问即可&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token header&#34;&gt;&lt;span class=&#34;token header-name keyword&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token header-value&#34;&gt;//cdn.jsdelivr.net/gh/gality369/MiniValine@v4.2.2-beta11/dist/MiniValine.min.js&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;jsdelivr 大幅提升了网站的访问速度，最重要的是免费！！！&lt;/p&gt;
-&lt;p&gt;再次由衷感谢这样的项目🙏&lt;/p&gt;
-&lt;h1 id=&#34;hello-world&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hello-world&#34;&gt;#&lt;/a&gt; Hello World&lt;/h1&gt;
-&lt;p&gt;仔细算算搭建个人博客已经有过大概 7、8 次了，每次总是因为各种各样的原因，最终都荒废了，记录的笔记，分享的技术也都遗失了，确实也有点遗憾。&lt;/p&gt;
-&lt;p&gt;本来计划等开学之后再重新搭博客来记录 &amp;amp; 激励自己，但是在认真看了&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ldGVybmFsc2FrdXJhMTMuY29tLw==&#34;&gt; Sakura 师傅&lt;/span&gt;的博客之后，大受震撼，几经思索之后，不禁问自己为什么要等到 10 几天后呢？为什么不能现在开始呢？于是，说做便做，今天便将诸多坑都踩了踩，产出了新博客的第一篇文章。&lt;/p&gt;
-&lt;p&gt;博客将具体怎么发展，写那些内容，暂时还没有想好，但是一定会置顶一篇自己的每日进展作为激励，希望可以一直坚持下去，每天更新。&lt;/p&gt;
-&lt;p&gt;末了，写一句激励自己的话吧！&lt;/p&gt;
-&lt;figure class=&#34;highlight c&#34;&gt;&lt;figcaption data-lang=&#34;c&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;泰山之管穿石，单极之绠断干。水非石之钻，索非木之锯，渐靡使之然也&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
     </channel>
 </rss>
