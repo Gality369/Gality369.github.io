@@ -1,9 +1,10 @@
-https://gality.cn/note/PNT/IRIG-B/
+https://gality.cn/note/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%A4%8D%E4%B9%A0%E8%A6%81%E7%82%B9/
 https://gality.cn/daily/DailyRecord/
+https://gality.cn/note/nndl/regularization/
+https://gality.cn/note/PNT/IRIG-B/
 https://gality.cn/ponder/Gresham-law/
 https://gality.cn/note/PNT/fiber-optic-and-WDM/
 https://gality.cn/misc/Polar-code-&-channel-polarization%20copy/
-https://gality.cn/note/nndl/regularization/
 https://gality.cn/note/nndl/HW-1/
 https://gality.cn/misc/trail-and-error/Mac-Latex/
 https://gality.cn/misc/trail-and-error/conda-mamba/
@@ -53,6 +54,8 @@ https://gality.cn/tags/os/
 https://gality.cn/tags/conda/
 https://gality.cn/tags/mamba/
 https://gality.cn/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/
+https://gality.cn/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/
+https://gality.cn/tags/%E5%A4%8D%E4%B9%A0%E8%A6%81%E7%82%B9/
 https://gality.cn/categories/os/
 https://gality.cn/categories/daily/
 https://gality.cn/categories/os/0-1/
