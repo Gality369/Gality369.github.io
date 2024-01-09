@@ -13,9 +13,9 @@
     <category term=" 二进制安全" />
     <category term=" 浏览器安全" />
     <entry>
-        <id>https://gality.cn/scientific-research/%20Blockchain%20Imitation%20Game/</id>
+        <id>https://gality.cn/scientific-research/thesis-reading/%20Blockchain%20Imitation%20Game/</id>
         <title>论文阅读｜ The Blockchain Imitation Game</title>
-        <link rel="alternate" href="https://gality.cn/scientific-research/%20Blockchain%20Imitation%20Game/"/>
+        <link rel="alternate" href="https://gality.cn/scientific-research/thesis-reading/%20Blockchain%20Imitation%20Game/"/>
         <content type="html">&lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;Qin K, Chaliasos S, Zhou L, et al. The blockchain imitation game[J]. arXiv preprint arXiv:2303.17877, 2023.&lt;/p&gt;
 &lt;p&gt;链接：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cudXNlbml4Lm9yZy9zeXN0ZW0vZmlsZXMvc2VjMjNmYWxsLXByZXB1Yi0zMzEtcWluLnBkZg==&#34;&gt;https://www.usenix.org/system/files/sec23fall-prepub-331-qin.pdf&lt;/span&gt;&lt;/p&gt;
@@ -289,6 +289,7 @@ c-1 5-5 9-11 9h-2L532 67 19 159h-2c-5 0-9-4-11-9l-5-22c-1-6 2-12 8-13z&#39;/&gt;
 &lt;p&gt;广义区块链模仿游戏是对智能合约区块链的一类新攻击。采用这种模仿既可能是为了自私的结果，例如，采用 APE 的矿工可以从 DeFi 攻击中获得价值数百万美元的收益；也可能是为了更好的结果，矿工可以作为白帽黑客帮助捍卫 DeFi 生态系统，方法是预先运行攻击，并可能将由此获得的收益退还给受害者。在这项工作中，我们证明了这种模仿游戏是切实可行的，并能在以太坊和 BSC 上产生巨大价值。&lt;/p&gt;
 </content>
         <category term="科研" scheme="https://gality.cn/categories/scientific-research/" />
+        <category term="论文阅读" scheme="https://gality.cn/categories/scientific-research/thesis-reading/" />
         <category term="区块链" scheme="https://gality.cn/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/" />
         <category term="论文阅读" scheme="https://gality.cn/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" />
         <updated>2024-01-08T06:21:22.000Z</updated>
@@ -2732,8 +2733,8 @@ T_4 = T_3 - \theta + \beta
         <category term="学习笔记" scheme="https://gality.cn/categories/note/" />
         <category term="神经网络与深度学习" scheme="https://gality.cn/categories/note/nndl/" />
         <category term="系列长篇" scheme="https://gality.cn/tags/%E7%B3%BB%E5%88%97%E9%95%BF%E7%AF%87/" />
-        <category term="学习笔记" scheme="https://gality.cn/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
         <category term="机器学习" scheme="https://gality.cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" />
+        <category term="学习笔记" scheme="https://gality.cn/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
         <category term="深度学习" scheme="https://gality.cn/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" />
         <category term="神经网络" scheme="https://gality.cn/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" />
         <updated>2023-09-28T00:26:21.000Z</updated>

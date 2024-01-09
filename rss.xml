@@ -16,10 +16,11 @@
         <category term=" 二进制安全" />
         <category term=" 浏览器安全" />
         <item>
-            <guid isPermalink="true">https://gality.cn/scientific-research/%20Blockchain%20Imitation%20Game/</guid>
+            <guid isPermalink="true">https://gality.cn/scientific-research/thesis-reading/%20Blockchain%20Imitation%20Game/</guid>
             <title>论文阅读｜ The Blockchain Imitation Game</title>
-            <link>https://gality.cn/scientific-research/%20Blockchain%20Imitation%20Game/</link>
+            <link>https://gality.cn/scientific-research/thesis-reading/%20Blockchain%20Imitation%20Game/</link>
             <category term="科研" scheme="https://gality.cn/categories/scientific-research/" />
+            <category term="论文阅读" scheme="https://gality.cn/categories/scientific-research/thesis-reading/" />
             <category term="区块链" scheme="https://gality.cn/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/" />
             <category term="论文阅读" scheme="https://gality.cn/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" />
             <pubDate>Mon, 08 Jan 2024 14:21:22 +0800</pubDate>
@@ -2545,8 +2546,8 @@ T_4 = T_3 - \theta + \beta
             <category term="学习笔记" scheme="https://gality.cn/categories/note/" />
             <category term="神经网络与深度学习" scheme="https://gality.cn/categories/note/nndl/" />
             <category term="系列长篇" scheme="https://gality.cn/tags/%E7%B3%BB%E5%88%97%E9%95%BF%E7%AF%87/" />
-            <category term="学习笔记" scheme="https://gality.cn/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
             <category term="机器学习" scheme="https://gality.cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" />
+            <category term="学习笔记" scheme="https://gality.cn/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
             <category term="深度学习" scheme="https://gality.cn/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" />
             <category term="神经网络" scheme="https://gality.cn/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" />
             <pubDate>Thu, 28 Sep 2023 08:26:21 +0800</pubDate>
