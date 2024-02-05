@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://gality.cn/daily/DailyRecord/</loc>
+    <loc>https://gality.cn/ml/CNN/</loc>
     
     <lastmod>2024-02-05</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://gality.cn/ml/CNN/</loc>
+    <loc>https://gality.cn/daily/DailyRecord/</loc>
     
     <lastmod>2024-02-05</lastmod>
     
@@ -347,13 +347,6 @@
   </url>
   
   <url>
-    <loc>https://gality.cn/tags/%E6%80%9D%E8%80%83/</loc>
-    <lastmod>2024-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://gality.cn/tags/%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/</loc>
     <lastmod>2024-02-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -397,6 +390,13 @@
   
   <url>
     <loc>https://gality.cn/tags/%E9%80%9A%E4%BF%A1/</loc>
+    <lastmod>2024-02-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://gality.cn/tags/%E6%80%9D%E8%80%83/</loc>
     <lastmod>2024-02-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -538,14 +538,14 @@
   </url>
   
   <url>
-    <loc>https://gality.cn/categories/ponder/</loc>
+    <loc>https://gality.cn/categories/misc/</loc>
     <lastmod>2024-02-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://gality.cn/categories/misc/</loc>
+    <loc>https://gality.cn/categories/ponder/</loc>
     <lastmod>2024-02-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -566,7 +566,7 @@
   </url>
   
   <url>
-    <loc>https://gality.cn/categories/misc/tool-usage/</loc>
+    <loc>https://gality.cn/categories/misc/trail-and-error/</loc>
     <lastmod>2024-02-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -580,14 +580,7 @@
   </url>
   
   <url>
-    <loc>https://gality.cn/categories/misc/trail-and-error/</loc>
-    <lastmod>2024-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://gality.cn/categories/misc/tool-usage/GDB/</loc>
+    <loc>https://gality.cn/categories/misc/tool-usage/</loc>
     <lastmod>2024-02-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -595,6 +588,13 @@
   
   <url>
     <loc>https://gality.cn/categories/daily/</loc>
+    <lastmod>2024-02-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://gality.cn/categories/misc/tool-usage/GDB/</loc>
     <lastmod>2024-02-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
