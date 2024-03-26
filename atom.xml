@@ -2625,9 +2625,9 @@ pip install tensorflow-gpu==2.6.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
 </content>
         <category term="机器学习" scheme="https://gality.cn/categories/ml/" />
         <category term="作业" scheme="https://gality.cn/categories/ml/homework/" />
+        <category term="大作业" scheme="https://gality.cn/tags/%E5%A4%A7%E4%BD%9C%E4%B8%9A/" />
         <category term="机器学习" scheme="https://gality.cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" />
         <category term="深度学习" scheme="https://gality.cn/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" />
-        <category term="大作业" scheme="https://gality.cn/tags/%E5%A4%A7%E4%BD%9C%E4%B8%9A/" />
         <category term="神经网络" scheme="https://gality.cn/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" />
         <updated>2023-10-18T06:22:27.000Z</updated>
     </entry>
@@ -3303,9 +3303,9 @@ T_4 = T_3 - \theta + \beta
 </content>
         <category term="机器学习" scheme="https://gality.cn/categories/ml/" />
         <category term="神经网络与深度学习" scheme="https://gality.cn/categories/ml/nndl/" />
+        <category term="系列长篇" scheme="https://gality.cn/tags/%E7%B3%BB%E5%88%97%E9%95%BF%E7%AF%87/" />
         <category term="机器学习" scheme="https://gality.cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" />
         <category term="深度学习" scheme="https://gality.cn/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" />
-        <category term="系列长篇" scheme="https://gality.cn/tags/%E7%B3%BB%E5%88%97%E9%95%BF%E7%AF%87/" />
         <category term="学习笔记" scheme="https://gality.cn/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
         <category term="神经网络" scheme="https://gality.cn/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" />
         <updated>2023-09-28T00:26:21.000Z</updated>
