@@ -311,43 +311,43 @@
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;FSI_LeadSig&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;FSI_LeadSig&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;0&lt;/td&gt;
 &lt;td&gt;4&lt;/td&gt;
 &lt;td&gt;固定值 &lt;code&gt;0x41615252&lt;/code&gt; ，引导签名，用于验证该扇区确实是一个 FSInfo 扇区。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;FSI_Reserved1&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;FSI_Reserved1&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;4&lt;/td&gt;
 &lt;td&gt;480&lt;/td&gt;
 &lt;td&gt;保留字段。此字段应始终初始化为零。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;FSI_StrucSig&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;FSI_StrucSig&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;484&lt;/td&gt;
 &lt;td&gt;4&lt;/td&gt;
 &lt;td&gt;固定值 &lt;code&gt;0x61417272&lt;/code&gt; ，另一个签名，更加局部地标识了与该扇区中使用的字段相关的位置。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;FSI_Free_Count&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;FSI_Free_Count&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;488&lt;/td&gt;
 &lt;td&gt;4&lt;/td&gt;
 &lt;td&gt;表示卷上最后一次更新后已知的空闲簇数。如果该值为  &lt;code&gt;0xFFFFFFFF&lt;/code&gt; ，则表示空闲簇数未知。&lt;br/&gt;这不一定是正确的，因此  &lt;code&gt;FAT&lt;/code&gt;  驱动程序需要确保该值对卷是有效的。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;FSI_Nxt_Free&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;FSI_Nxt_Free&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;492&lt;/td&gt;
 &lt;td&gt;4&lt;/td&gt;
 &lt;td&gt;此字段为 FAT 驱动程序提供一个提示，指示驱动程序应从哪个簇开始查找空闲簇。 由于  &lt;code&gt;FAT32&lt;/code&gt;  的  &lt;code&gt;FAT&lt;/code&gt;  很大，如果开始查找时有很多已分配的簇，则从 FAT 卷的第一个簇开始查找空闲簇可能会非常耗时。 通常，此值设置为驱动程序上次分配的最后一个簇号。如果值为  &lt;code&gt;0xFFFFFFFF&lt;/code&gt; ，则表示没有提示，驱动程序应从簇 2 开始查找。 此值可能不准确，因此 FAT 驱动程序需要确保它对卷是有效的。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;FSI_Reserved2&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;FSI_Reserved2&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;496&lt;/td&gt;
 &lt;td&gt;12&lt;/td&gt;
 &lt;td&gt;保留字段。此字段应始终初始化为零。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;FSI_TrailSig&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;FSI_TrailSig&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;508&lt;/td&gt;
 &lt;td&gt;4&lt;/td&gt;
 &lt;td&gt;固定值 &lt;code&gt;0xAA550000&lt;/code&gt; ，结尾签名，用于验证该扇区确实是一个  &lt;code&gt;FSInfo&lt;/code&gt;  扇区。&lt;/td&gt;
@@ -404,7 +404,7 @@
 &lt;td&gt;空闲簇&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;0x?0000001&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x?0000001&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;保留簇&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -2790,9 +2790,9 @@ pip install tensorflow-gpu==2.6.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
             <link>https://gality.cn/misc/PNT/IRIG-B/</link>
             <category term="杂项" scheme="https://gality.cn/categories/misc/" />
             <category term="PNT" scheme="https://gality.cn/categories/misc/PNT/" />
-            <category term="学习笔记" scheme="https://gality.cn/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
-            <category term="授时" scheme="https://gality.cn/tags/%E6%8E%88%E6%97%B6/" />
             <category term="通信" scheme="https://gality.cn/tags/%E9%80%9A%E4%BF%A1/" />
+            <category term="授时" scheme="https://gality.cn/tags/%E6%8E%88%E6%97%B6/" />
+            <category term="学习笔记" scheme="https://gality.cn/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
             <category term="协议" scheme="https://gality.cn/tags/%E5%8D%8F%E8%AE%AE/" />
             <pubDate>Fri, 27 Oct 2023 17:00:02 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;irig-简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#irig-简介&#34;&gt;#&lt;/a&gt; IRIG 简介&lt;/h1&gt;
@@ -2965,9 +2965,9 @@ pip install tensorflow-gpu==2.6.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
             <link>https://gality.cn/misc/PNT/fiber-optic-and-WDM/</link>
             <category term="杂项" scheme="https://gality.cn/categories/misc/" />
             <category term="PNT" scheme="https://gality.cn/categories/misc/PNT/" />
-            <category term="学习笔记" scheme="https://gality.cn/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
-            <category term="授时" scheme="https://gality.cn/tags/%E6%8E%88%E6%97%B6/" />
             <category term="通信" scheme="https://gality.cn/tags/%E9%80%9A%E4%BF%A1/" />
+            <category term="授时" scheme="https://gality.cn/tags/%E6%8E%88%E6%97%B6/" />
+            <category term="学习笔记" scheme="https://gality.cn/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
             <category term="PNT" scheme="https://gality.cn/tags/PNT/" />
             <pubDate>Wed, 25 Oct 2023 16:19:46 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;光纤通信原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#光纤通信原理&#34;&gt;#&lt;/a&gt; 光纤通信原理&lt;/h1&gt;
@@ -3181,8 +3181,8 @@ pip install tensorflow-gpu==2.6.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
             <category term="作业" scheme="https://gality.cn/categories/ml/homework/" />
             <category term="机器学习" scheme="https://gality.cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" />
             <category term="深度学习" scheme="https://gality.cn/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" />
-            <category term="神经网络" scheme="https://gality.cn/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" />
             <category term="大作业" scheme="https://gality.cn/tags/%E5%A4%A7%E4%BD%9C%E4%B8%9A/" />
+            <category term="神经网络" scheme="https://gality.cn/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" />
             <pubDate>Wed, 18 Oct 2023 14:22:27 +0800</pubDate>
             <description><![CDATA[ &lt;div class=&#34;note info no-icon&#34;&gt;
 &lt;p&gt;李宏毅老师 2022 年春季学习机器中留的第一次大作业，需要根据各项疫情相关数据，自行实现网络结构并训练模型，最终实现一个可以精准预测疫情增长人数的深度学习模型。&lt;/p&gt;
@@ -3497,9 +3497,9 @@ pip install tensorflow-gpu==2.6.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
             <link>https://gality.cn/misc/course/Monte-Carlo-method/</link>
             <category term="杂项" scheme="https://gality.cn/categories/misc/" />
             <category term="校内课程" scheme="https://gality.cn/categories/misc/course/" />
-            <category term="大作业" scheme="https://gality.cn/tags/%E5%A4%A7%E4%BD%9C%E4%B8%9A/" />
             <category term="数理统计" scheme="https://gality.cn/tags/%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/" />
             <category term="蒙特卡洛法" scheme="https://gality.cn/tags/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%B3%95/" />
+            <category term="大作业" scheme="https://gality.cn/tags/%E5%A4%A7%E4%BD%9C%E4%B8%9A/" />
             <pubDate>Wed, 11 Oct 2023 17:23:31 +0800</pubDate>
             <description><![CDATA[ &lt;div class=&#34;note info no-icon&#34;&gt;
 &lt;p&gt;菜狗完成数理统计第一次大作业的记录，记录了在完成的过程中对已学习的数理统计知识进行的回顾和总结，其实就是怕忘了 QwQ，有问题的话及时喷我，谢谢各位大佬 Orz&lt;/p&gt;
@@ -3600,10 +3600,10 @@ M1001 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/
             <link>https://gality.cn/misc/PNT/Polar-code-&amp;-channel-polarization%20copy/</link>
             <category term="杂项" scheme="https://gality.cn/categories/misc/" />
             <category term="PNT" scheme="https://gality.cn/categories/misc/PNT/" />
-            <category term="通信" scheme="https://gality.cn/tags/%E9%80%9A%E4%BF%A1/" />
             <category term="极化码" scheme="https://gality.cn/tags/%E6%9E%81%E5%8C%96%E7%A0%81/" />
             <category term="信道极化" scheme="https://gality.cn/tags/%E4%BF%A1%E9%81%93%E6%9E%81%E5%8C%96/" />
             <category term="信道编码" scheme="https://gality.cn/tags/%E4%BF%A1%E9%81%93%E7%BC%96%E7%A0%81/" />
+            <category term="通信" scheme="https://gality.cn/tags/%E9%80%9A%E4%BF%A1/" />
             <pubDate>Sun, 01 Oct 2023 15:59:21 +0800</pubDate>
             <description><![CDATA[ &lt;div class=&#34;note info no-icon&#34;&gt;
 &lt;p&gt;&lt;strong&gt;极化码&lt;/strong&gt;（Polar code）是一种前向错误更正编码方式，用于讯号传输。&lt;/p&gt;
