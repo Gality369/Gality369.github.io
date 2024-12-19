@@ -2790,8 +2790,8 @@ pip install tensorflow-gpu==2.6.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
             <link>https://gality.cn/misc/PNT/IRIG-B/</link>
             <category term="杂项" scheme="https://gality.cn/categories/misc/" />
             <category term="PNT" scheme="https://gality.cn/categories/misc/PNT/" />
-            <category term="授时" scheme="https://gality.cn/tags/%E6%8E%88%E6%97%B6/" />
             <category term="学习笔记" scheme="https://gality.cn/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
+            <category term="授时" scheme="https://gality.cn/tags/%E6%8E%88%E6%97%B6/" />
             <category term="通信" scheme="https://gality.cn/tags/%E9%80%9A%E4%BF%A1/" />
             <category term="协议" scheme="https://gality.cn/tags/%E5%8D%8F%E8%AE%AE/" />
             <pubDate>Fri, 27 Oct 2023 17:00:02 +0800</pubDate>
@@ -2965,8 +2965,8 @@ pip install tensorflow-gpu==2.6.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
             <link>https://gality.cn/misc/PNT/fiber-optic-and-WDM/</link>
             <category term="杂项" scheme="https://gality.cn/categories/misc/" />
             <category term="PNT" scheme="https://gality.cn/categories/misc/PNT/" />
-            <category term="授时" scheme="https://gality.cn/tags/%E6%8E%88%E6%97%B6/" />
             <category term="学习笔记" scheme="https://gality.cn/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
+            <category term="授时" scheme="https://gality.cn/tags/%E6%8E%88%E6%97%B6/" />
             <category term="通信" scheme="https://gality.cn/tags/%E9%80%9A%E4%BF%A1/" />
             <category term="PNT" scheme="https://gality.cn/tags/PNT/" />
             <pubDate>Wed, 25 Oct 2023 16:19:46 +0800</pubDate>
@@ -3181,8 +3181,8 @@ pip install tensorflow-gpu==2.6.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
             <category term="作业" scheme="https://gality.cn/categories/ml/homework/" />
             <category term="机器学习" scheme="https://gality.cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" />
             <category term="深度学习" scheme="https://gality.cn/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" />
-            <category term="大作业" scheme="https://gality.cn/tags/%E5%A4%A7%E4%BD%9C%E4%B8%9A/" />
             <category term="神经网络" scheme="https://gality.cn/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" />
+            <category term="大作业" scheme="https://gality.cn/tags/%E5%A4%A7%E4%BD%9C%E4%B8%9A/" />
             <pubDate>Wed, 18 Oct 2023 14:22:27 +0800</pubDate>
             <description><![CDATA[ &lt;div class=&#34;note info no-icon&#34;&gt;
 &lt;p&gt;李宏毅老师 2022 年春季学习机器中留的第一次大作业，需要根据各项疫情相关数据，自行实现网络结构并训练模型，最终实现一个可以精准预测疫情增长人数的深度学习模型。&lt;/p&gt;
@@ -3497,9 +3497,9 @@ pip install tensorflow-gpu==2.6.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
             <link>https://gality.cn/misc/course/Monte-Carlo-method/</link>
             <category term="杂项" scheme="https://gality.cn/categories/misc/" />
             <category term="校内课程" scheme="https://gality.cn/categories/misc/course/" />
+            <category term="大作业" scheme="https://gality.cn/tags/%E5%A4%A7%E4%BD%9C%E4%B8%9A/" />
             <category term="数理统计" scheme="https://gality.cn/tags/%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/" />
             <category term="蒙特卡洛法" scheme="https://gality.cn/tags/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%B3%95/" />
-            <category term="大作业" scheme="https://gality.cn/tags/%E5%A4%A7%E4%BD%9C%E4%B8%9A/" />
             <pubDate>Wed, 11 Oct 2023 17:23:31 +0800</pubDate>
             <description><![CDATA[ &lt;div class=&#34;note info no-icon&#34;&gt;
 &lt;p&gt;菜狗完成数理统计第一次大作业的记录，记录了在完成的过程中对已学习的数理统计知识进行的回顾和总结，其实就是怕忘了 QwQ，有问题的话及时喷我，谢谢各位大佬 Orz&lt;/p&gt;
