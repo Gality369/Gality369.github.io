@@ -2876,9 +2876,9 @@ pip install tensorflow-gpu==2.6.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
 </content>
         <category term="杂项" scheme="https://gality.cn/categories/misc/" />
         <category term="PNT" scheme="https://gality.cn/categories/misc/PNT/" />
-        <category term="通信" scheme="https://gality.cn/tags/%E9%80%9A%E4%BF%A1/" />
         <category term="授时" scheme="https://gality.cn/tags/%E6%8E%88%E6%97%B6/" />
         <category term="学习笔记" scheme="https://gality.cn/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
+        <category term="通信" scheme="https://gality.cn/tags/%E9%80%9A%E4%BF%A1/" />
         <category term="协议" scheme="https://gality.cn/tags/%E5%8D%8F%E8%AE%AE/" />
         <updated>2023-10-27T09:00:02.000Z</updated>
     </entry>
@@ -3035,9 +3035,9 @@ pip install tensorflow-gpu==2.6.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
 </content>
         <category term="杂项" scheme="https://gality.cn/categories/misc/" />
         <category term="PNT" scheme="https://gality.cn/categories/misc/PNT/" />
-        <category term="通信" scheme="https://gality.cn/tags/%E9%80%9A%E4%BF%A1/" />
         <category term="授时" scheme="https://gality.cn/tags/%E6%8E%88%E6%97%B6/" />
         <category term="学习笔记" scheme="https://gality.cn/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
+        <category term="通信" scheme="https://gality.cn/tags/%E9%80%9A%E4%BF%A1/" />
         <category term="PNT" scheme="https://gality.cn/tags/PNT/" />
         <updated>2023-10-25T08:19:46.000Z</updated>
     </entry>
@@ -3696,10 +3696,10 @@ M1001 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/
 </content>
         <category term="杂项" scheme="https://gality.cn/categories/misc/" />
         <category term="PNT" scheme="https://gality.cn/categories/misc/PNT/" />
+        <category term="通信" scheme="https://gality.cn/tags/%E9%80%9A%E4%BF%A1/" />
         <category term="极化码" scheme="https://gality.cn/tags/%E6%9E%81%E5%8C%96%E7%A0%81/" />
         <category term="信道极化" scheme="https://gality.cn/tags/%E4%BF%A1%E9%81%93%E6%9E%81%E5%8C%96/" />
         <category term="信道编码" scheme="https://gality.cn/tags/%E4%BF%A1%E9%81%93%E7%BC%96%E7%A0%81/" />
-        <category term="通信" scheme="https://gality.cn/tags/%E9%80%9A%E4%BF%A1/" />
         <updated>2023-10-01T07:59:21.000Z</updated>
     </entry>
 </feed>

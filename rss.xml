@@ -2790,9 +2790,9 @@ pip install tensorflow-gpu==2.6.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
             <link>https://gality.cn/misc/PNT/IRIG-B/</link>
             <category term="杂项" scheme="https://gality.cn/categories/misc/" />
             <category term="PNT" scheme="https://gality.cn/categories/misc/PNT/" />
-            <category term="通信" scheme="https://gality.cn/tags/%E9%80%9A%E4%BF%A1/" />
             <category term="授时" scheme="https://gality.cn/tags/%E6%8E%88%E6%97%B6/" />
             <category term="学习笔记" scheme="https://gality.cn/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
+            <category term="通信" scheme="https://gality.cn/tags/%E9%80%9A%E4%BF%A1/" />
             <category term="协议" scheme="https://gality.cn/tags/%E5%8D%8F%E8%AE%AE/" />
             <pubDate>Fri, 27 Oct 2023 17:00:02 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;irig-简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#irig-简介&#34;&gt;#&lt;/a&gt; IRIG 简介&lt;/h1&gt;
@@ -2965,9 +2965,9 @@ pip install tensorflow-gpu==2.6.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
             <link>https://gality.cn/misc/PNT/fiber-optic-and-WDM/</link>
             <category term="杂项" scheme="https://gality.cn/categories/misc/" />
             <category term="PNT" scheme="https://gality.cn/categories/misc/PNT/" />
-            <category term="通信" scheme="https://gality.cn/tags/%E9%80%9A%E4%BF%A1/" />
             <category term="授时" scheme="https://gality.cn/tags/%E6%8E%88%E6%97%B6/" />
             <category term="学习笔记" scheme="https://gality.cn/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
+            <category term="通信" scheme="https://gality.cn/tags/%E9%80%9A%E4%BF%A1/" />
             <category term="PNT" scheme="https://gality.cn/tags/PNT/" />
             <pubDate>Wed, 25 Oct 2023 16:19:46 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;光纤通信原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#光纤通信原理&#34;&gt;#&lt;/a&gt; 光纤通信原理&lt;/h1&gt;
@@ -3600,10 +3600,10 @@ M1001 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/
             <link>https://gality.cn/misc/PNT/Polar-code-&amp;-channel-polarization%20copy/</link>
             <category term="杂项" scheme="https://gality.cn/categories/misc/" />
             <category term="PNT" scheme="https://gality.cn/categories/misc/PNT/" />
+            <category term="通信" scheme="https://gality.cn/tags/%E9%80%9A%E4%BF%A1/" />
             <category term="极化码" scheme="https://gality.cn/tags/%E6%9E%81%E5%8C%96%E7%A0%81/" />
             <category term="信道极化" scheme="https://gality.cn/tags/%E4%BF%A1%E9%81%93%E6%9E%81%E5%8C%96/" />
             <category term="信道编码" scheme="https://gality.cn/tags/%E4%BF%A1%E9%81%93%E7%BC%96%E7%A0%81/" />
-            <category term="通信" scheme="https://gality.cn/tags/%E9%80%9A%E4%BF%A1/" />
             <pubDate>Sun, 01 Oct 2023 15:59:21 +0800</pubDate>
             <description><![CDATA[ &lt;div class=&#34;note info no-icon&#34;&gt;
 &lt;p&gt;&lt;strong&gt;极化码&lt;/strong&gt;（Polar code）是一种前向错误更正编码方式，用于讯号传输。&lt;/p&gt;
