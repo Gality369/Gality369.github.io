@@ -28,7 +28,9 @@
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;details class=&#34;primary&#34;&gt;&lt;summary&gt;思考🤔&lt;/summary&gt;&lt;div&gt;
-&lt;p&gt;总结复盘&lt;/p&gt;
+&lt;p&gt;很扎实的一篇工作，作者提出要在 image 和 syscall 两个维度来测试文件系统，在变异 image 时只变异对系统影响较大的 metadata，提升 fuzz 效果的同时还减少了需要变异的数据大小；在变异 syscall 时采用了和 syzkaller 类似的策略，区别是作者利用了文件系统的状态信息（例如文件、路径、权限等）并且追踪了每个 syscall 对系统的影响，遗憾的是，由于未能在执行 syscall 时与系统进行交互，部分会导致文件系统状态变化的 syscall 不会进行变异（例如 &lt;code&gt;unlink()&lt;/code&gt;  这类可能会删除文件的 syscall），理论来说还是会有部分状态空间是探索不到的。&lt;/p&gt;
+&lt;p&gt;同时作者还在 LKL 上实现了较新版本的 Linux 内核，从而可以以毫秒级的速度重置系统状态，这一点确实是其他模拟执行方式无法企及的，LKL 带来的加速对整体 fuzzing 速度和可复现性的提升非常明显，然而，LKL 自身已经不在支持新版本的 Linux 内核了，如果想用 LKL 测试 v6.0 以上版本的话，适配的工作量可能会非常巨大。&lt;/p&gt;
+&lt;p&gt;有关于文件系统 fuzz 的工作并不是很多，这篇论文及其后续的两篇论文（Finding Semantic Bugs in File Systems with an Extensible Fuzzing Framework）的成果都非常好，值得认真分析研究，同时&lt;a href=&#34;#related-work&#34;&gt; Related Work&lt;/a&gt; 中的一些工作也非常有意思，可以多看看。&lt;/p&gt;
 &lt;/div&gt;&lt;/details&gt;
 &lt;h1 id=&#34;abstract&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#abstract&#34;&gt;#&lt;/a&gt; Abstract&lt;/h1&gt;
 &lt;p&gt;文件系统是操作系统的基本构建模块，通常体积庞大且极为复杂，因此难以做到完全无错误。目前，文件系统主要依赖常规的压力测试工具和形式化检查工具来发现漏洞，但随着文件系统和操作系统复杂性的不断增加，这些工具的能力逐渐显得有限。因此，模糊测试作为一种不需要深入了解目标系统却行之有效的实用方法，逐渐成为首选。然而，文件系统模糊测试面临以下三个主要挑战：&lt;/p&gt;
@@ -383,8 +385,8 @@
 </content>
         <category term="科研" scheme="https://gality.cn/categories/scientific-research/" />
         <category term="论文阅读" scheme="https://gality.cn/categories/scientific-research/thesis-reading/" />
-        <category term="论文阅读" scheme="https://gality.cn/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" />
         <category term="文件系统" scheme="https://gality.cn/tags/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/" />
+        <category term="论文阅读" scheme="https://gality.cn/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" />
         <category term="Fuzz" scheme="https://gality.cn/tags/Fuzz/" />
         <updated>2025-01-22T14:27:11.000Z</updated>
     </entry>
@@ -3252,9 +3254,9 @@ pip install tensorflow-gpu==2.6.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
 </content>
         <category term="杂项" scheme="https://gality.cn/categories/misc/" />
         <category term="PNT" scheme="https://gality.cn/categories/misc/PNT/" />
+        <category term="授时" scheme="https://gality.cn/tags/%E6%8E%88%E6%97%B6/" />
         <category term="学习笔记" scheme="https://gality.cn/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
         <category term="通信" scheme="https://gality.cn/tags/%E9%80%9A%E4%BF%A1/" />
-        <category term="授时" scheme="https://gality.cn/tags/%E6%8E%88%E6%97%B6/" />
         <category term="协议" scheme="https://gality.cn/tags/%E5%8D%8F%E8%AE%AE/" />
         <updated>2023-10-27T09:00:02.000Z</updated>
     </entry>
@@ -3411,10 +3413,10 @@ pip install tensorflow-gpu==2.6.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
 </content>
         <category term="杂项" scheme="https://gality.cn/categories/misc/" />
         <category term="PNT" scheme="https://gality.cn/categories/misc/PNT/" />
+        <category term="授时" scheme="https://gality.cn/tags/%E6%8E%88%E6%97%B6/" />
         <category term="学习笔记" scheme="https://gality.cn/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
         <category term="通信" scheme="https://gality.cn/tags/%E9%80%9A%E4%BF%A1/" />
         <category term="PNT" scheme="https://gality.cn/tags/PNT/" />
-        <category term="授时" scheme="https://gality.cn/tags/%E6%8E%88%E6%97%B6/" />
         <updated>2023-10-25T08:19:46.000Z</updated>
     </entry>
     <entry>
