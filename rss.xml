@@ -100,8 +100,8 @@
 &lt;li&gt;Ubuntu Server 24.04&lt;/li&gt;
 &lt;li&gt;Linux kernel 6.8.0-51-generic&lt;/li&gt;
 &lt;li&gt;VSCode + GCC&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;⚓️对应代码版本： &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0dhbGl0eTM2OS9zaW1wbGVmcy9yZWxlYXNlcy90YWcvVjAuMA==&#34;&gt;V0.0&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;h1 id=&#34;依赖&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#依赖&#34;&gt;#&lt;/a&gt; 依赖&lt;/h1&gt;
 &lt;p&gt;因为是内核态的文件系统，编译出来的文件系统会是一个内核模块，所以首先需要安装对应版本的 Linux 内核头文件用于开发。&lt;/p&gt;
