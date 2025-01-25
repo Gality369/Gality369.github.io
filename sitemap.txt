@@ -1,3 +1,5 @@
+https://gality.cn/os/kernel/simplefs/
+https://gality.cn/misc/trail-and-error/include-error/
 https://gality.cn/scientific-research/thesis-reading/JANUS/
 https://gality.cn/about/index.html
 https://gality.cn/os/fs/FAT32/
@@ -86,6 +88,8 @@ https://gality.cn/tags/%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/
 https://gality.cn/tags/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%B3%95/
 https://gality.cn/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/
 https://gality.cn/tags/%E5%A4%8D%E4%B9%A0%E8%A6%81%E7%82%B9/
+https://gality.cn/tags/Vscode/
+https://gality.cn/tags/C-C/
 https://gality.cn/categories/daily/
 https://gality.cn/categories/os/
 https://gality.cn/categories/os/0-1/
@@ -105,3 +109,4 @@ https://gality.cn/categories/scientific-research/thesis-reading/
 https://gality.cn/categories/misc/C/
 https://gality.cn/categories/misc/course/
 https://gality.cn/categories/misc/tool-usage/GDB/
+https://gality.cn/categories/os/kernel/0-1/
