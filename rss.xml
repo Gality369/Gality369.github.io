@@ -4740,8 +4740,8 @@ deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted univers
             <link>https://gality.cn/scientific-research/thesis-reading/%20Blockchain%20Imitation%20Game/</link>
             <category term="科研" scheme="https://gality.cn/categories/scientific-research/" />
             <category term="论文阅读" scheme="https://gality.cn/categories/scientific-research/thesis-reading/" />
-            <category term="论文阅读" scheme="https://gality.cn/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" />
             <category term="区块链" scheme="https://gality.cn/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/" />
+            <category term="论文阅读" scheme="https://gality.cn/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" />
             <pubDate>Mon, 08 Jan 2024 14:21:22 +0800</pubDate>
             <description><![CDATA[ &lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;Qin K, Chaliasos S, Zhou L, et al. The blockchain imitation game[J]. arXiv preprint arXiv:2303.17877, 2023.&lt;/p&gt;
