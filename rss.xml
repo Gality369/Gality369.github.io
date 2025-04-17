@@ -109,7 +109,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9idHJmcy5yZWFkdGhlZG9jcy5pby9lbi9sYXRlc3QvYnRyZnMtaW9jdGwuaHRtbCNidHJmcy1pb2Mtc25hcC1kZXN0cm95&#34;&gt;BTRFS_IOC_SNAP_DESTROY&lt;/span&gt;&lt;/td&gt;
-&lt;td&gt;&lt;s&gt;删除一个子卷&lt;/s&gt;（已过时，被 &lt;a href=&#34;BTRFS_IOC_SNAP_DESTROY_V2&#34;&gt;BTRFS_IOC_SNAP_DESTROY_V2 &lt;/a&gt;代替）&lt;/td&gt;
+&lt;td&gt;&lt;s&gt;删除一个子卷&lt;/s&gt;（已过时，被 &lt;a href=&#34;#btrfs_ioc_snap_destroy_v2&#34;&gt;BTRFS_IOC_SNAP_DESTROY_V2 &lt;/a&gt;代替）&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;#btrfs_ioctl_vol_args&#34;&gt;struct btrfs_ioctl_vol_args&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -2324,9 +2324,9 @@
             <category term="杂项" scheme="https://gality.cn/categories/misc/" />
             <category term="踩坑" scheme="https://gality.cn/categories/misc/trail-and-error/" />
             <category term="操作系统" scheme="https://gality.cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" />
-            <category term="踩坑" scheme="https://gality.cn/tags/%E8%B8%A9%E5%9D%91/" />
             <category term="kernel" scheme="https://gality.cn/tags/kernel/" />
             <category term="linux" scheme="https://gality.cn/tags/linux/" />
+            <category term="踩坑" scheme="https://gality.cn/tags/%E8%B8%A9%E5%9D%91/" />
             <pubDate>Tue, 04 Feb 2025 14:26:12 +0800</pubDate>
             <description><![CDATA[ &lt;div class=&#34;note primary no-icon&#34;&gt;
 &lt;p&gt;debug 是定位并解决代码开发过程中问题的最好方法，本篇文章讲解如何利用 QEMU 和 GDB 来搭建 linux kernel 内核及内核模块的调试环境，以及如何结合 VSCode 实现带 UI 的调试。&lt;/p&gt;
@@ -2437,9 +2437,9 @@
             <category term="从0到1" scheme="https://gality.cn/categories/os/kernel/0-1/" />
             <category term="操作系统" scheme="https://gality.cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" />
             <category term="系列长篇" scheme="https://gality.cn/tags/%E7%B3%BB%E5%88%97%E9%95%BF%E7%AF%87/" />
+            <category term="文件系统" scheme="https://gality.cn/tags/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/" />
             <category term="kernel" scheme="https://gality.cn/tags/kernel/" />
             <category term="linux" scheme="https://gality.cn/tags/linux/" />
-            <category term="文件系统" scheme="https://gality.cn/tags/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/" />
             <pubDate>Mon, 03 Feb 2025 22:55:33 +0800</pubDate>
             <description><![CDATA[ &lt;div class=&#34;note primary no-icon&#34;&gt;
 &lt;p&gt;本篇文章是从零实现文件系统的第四篇文章，主要内容为文件系统增添列出目录功能，由于列出文件涉及到磁盘上存储的数据，所以也会涉及一点磁盘读取相关的内容。&lt;/p&gt;
@@ -2551,9 +2551,9 @@
             <category term="从0到1" scheme="https://gality.cn/categories/os/kernel/0-1/" />
             <category term="操作系统" scheme="https://gality.cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" />
             <category term="系列长篇" scheme="https://gality.cn/tags/%E7%B3%BB%E5%88%97%E9%95%BF%E7%AF%87/" />
+            <category term="文件系统" scheme="https://gality.cn/tags/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/" />
             <category term="kernel" scheme="https://gality.cn/tags/kernel/" />
             <category term="linux" scheme="https://gality.cn/tags/linux/" />
-            <category term="文件系统" scheme="https://gality.cn/tags/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/" />
             <pubDate>Sat, 01 Feb 2025 22:07:19 +0800</pubDate>
             <description><![CDATA[ &lt;div class=&#34;note primary no-icon&#34;&gt;
 &lt;p&gt;本篇文章是从零实现文件系统的第三篇文章，主要内容为设计并实现磁盘上的数据存储格式以及为 &lt;code&gt;simplefs&lt;/code&gt;  实现一个简单的文件系统创建（格式化）工具 &lt;code&gt;mkfs.simplefs&lt;/code&gt; 。&lt;/p&gt;
@@ -2595,9 +2595,9 @@
             <category term="从0到1" scheme="https://gality.cn/categories/os/kernel/0-1/" />
             <category term="操作系统" scheme="https://gality.cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" />
             <category term="系列长篇" scheme="https://gality.cn/tags/%E7%B3%BB%E5%88%97%E9%95%BF%E7%AF%87/" />
+            <category term="文件系统" scheme="https://gality.cn/tags/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/" />
             <category term="kernel" scheme="https://gality.cn/tags/kernel/" />
             <category term="linux" scheme="https://gality.cn/tags/linux/" />
-            <category term="文件系统" scheme="https://gality.cn/tags/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/" />
             <pubDate>Mon, 27 Jan 2025 20:47:36 +0800</pubDate>
             <description><![CDATA[ &lt;div class=&#34;note primary no-icon&#34;&gt;
 &lt;p&gt;本篇文章是从零实现文件系统的第二篇文章，主要内容为利用 VFS 提供的 API 实现一个最简单的文件系统并可以正确挂载 / 卸载，其中会开始涉及一些 linux 文件系统的相关知识和实现原理。&lt;/p&gt;
@@ -2949,9 +2949,9 @@
             <category term="从0到1" scheme="https://gality.cn/categories/os/kernel/0-1/" />
             <category term="操作系统" scheme="https://gality.cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" />
             <category term="系列长篇" scheme="https://gality.cn/tags/%E7%B3%BB%E5%88%97%E9%95%BF%E7%AF%87/" />
+            <category term="文件系统" scheme="https://gality.cn/tags/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/" />
             <category term="kernel" scheme="https://gality.cn/tags/kernel/" />
             <category term="linux" scheme="https://gality.cn/tags/linux/" />
-            <category term="文件系统" scheme="https://gality.cn/tags/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/" />
             <pubDate>Sat, 25 Jan 2025 11:55:33 +0800</pubDate>
             <description><![CDATA[ &lt;div class=&#34;note primary no-icon&#34;&gt;
 &lt;p&gt;本篇文章是从零实现文件系统的第一篇文章，主要内容为内核模块开发环境搭建以及编写一个 Hello world 级别的内核模块并装载在内核，很适合作为深入 linux 内核的第一步。&lt;/p&gt;
@@ -4740,8 +4740,8 @@ deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted univers
             <link>https://gality.cn/scientific-research/thesis-reading/%20Blockchain%20Imitation%20Game/</link>
             <category term="科研" scheme="https://gality.cn/categories/scientific-research/" />
             <category term="论文阅读" scheme="https://gality.cn/categories/scientific-research/thesis-reading/" />
-            <category term="论文阅读" scheme="https://gality.cn/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" />
             <category term="区块链" scheme="https://gality.cn/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/" />
+            <category term="论文阅读" scheme="https://gality.cn/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" />
             <pubDate>Mon, 08 Jan 2024 14:21:22 +0800</pubDate>
             <description><![CDATA[ &lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;Qin K, Chaliasos S, Zhou L, et al. The blockchain imitation game[J]. arXiv preprint arXiv:2303.17877, 2023.&lt;/p&gt;
